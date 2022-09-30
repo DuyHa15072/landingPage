@@ -3,3 +3,56 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    color: white;
+    background: black;
+    user-select: none;
+  }
+
+  .fiter {
+    filter: drop-shadow(18px 20px 0px #3E3E3E);
+  }
+  .Contact_information {
+    background: url('./../image/Group\ 10.png');
+  }
+
+  .contacts {
+    background: url('./../image/Mask\ group.png');
+  }
+
+  .parent2 {
+    position: relative;
+
+  }
+  .child2 {
+    position: absolute;
+    left: 229px;
+    bottom: -270px;
+  }
+
+  .parent1 {
+    position: relative;
+  }
+
+  .child1 {
+    position: absolute;
+    background: transparent;
+    right: 228px;
+    left: 180px;
+    z-index: 2;
+  }
+  .input_bg{
+    border: 1px solid white;
+    border-radius: 3px;
+    background: transparent;
+    padding: 10px 150px;
+    margin-bottom: 28px;
+  }
+  .submit{
+    background-color: #F7C51E;
+  }
