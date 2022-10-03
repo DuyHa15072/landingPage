@@ -211,15 +211,15 @@ export default {
             <swiper-slide
               ><img src="./image/side2.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/slider2 (1).png" alt="" /></swiper-slide
+              ><img src="./image/slider1.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/slider2 (2).png" alt="" /></swiper-slide
+              ><img src="./image/slider2.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/slider2 (3).png" alt="" /></swiper-slide
+              ><img src="./image/slider3.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/slider2 (4).png" alt="" /></swiper-slide
+              ><img src="./image/slider4.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/slider2 (1).png" alt="" /></swiper-slide
+              ><img src="./image/slider2.png" alt="" /></swiper-slide
             ><swiper-slide
               ><img src="./image/side2.png" alt="" /></swiper-slide
             ><swiper-slide
