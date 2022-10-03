@@ -169,7 +169,7 @@ export default {
         :direction="'vertical'"
         :loop="true"
         :autoplay="{
-          delay: 2500,
+          delay: 5500,
           disableOnInteraction: false,
         }"
         :pagination="{
@@ -203,7 +203,7 @@ export default {
             :pagination="pagination"
             :modules="modules"
             :autoplay="{
-              delay: 2500,
+              delay: 5500,
               disableOnInteraction: false,
             }"
             class="mySwiper_two"
@@ -260,13 +260,13 @@ export default {
           OEG ESPORTS
         </p>
       </div>
-      <div>
+      <div class="">
         <swiper
           :slidesPerView="1"
           :spaceBetween="0"
           :loop="true"
           :autoplay="{
-            delay: 2500,
+            delay: 5500,
             disableOnInteraction: false,
           }"
           :pagination="{
