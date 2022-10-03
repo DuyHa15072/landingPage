@@ -25,7 +25,7 @@ export default {
         clickable: true,
         
         renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (menu[index]) + "</span>";
+          return '<span class="' + className + '">' + (menu[index ]) + "</span>";
         },
       },
     };
@@ -190,7 +190,7 @@ export default {
       </swiper>
     </div>
   </section>
-  <div class="bg-[#121212]">
+  <div class="bg-[#121212] ">
     <section class="side2 px-[229px]">
       <div >
         <p class="text-[#F7C51E]">GIẢI ĐẤU</p>
