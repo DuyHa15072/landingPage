@@ -18,13 +18,14 @@ export default {
     SwiperSlide,
   },
   setup() {
-    let name = ['name', 'hhhh'];
+    var menu = ['Slide 1', 'Slide 2', 'Slide 3','Slide 4', 'Slide 5', 'Slide 6','Slide 7', 'Slide 8', 'Slide 9']
     return {
       modules: [Autoplay, Pagination, Navigation],
       pagination: {
         clickable: true,
+        
         renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + 1 + "</span>";
+          return '<span class="' + className + '">' + (menu[index]) + "</span>";
         },
       },
     };
@@ -191,7 +192,7 @@ export default {
   </section>
   <div class="bg-[#121212]">
     <section class="side2 px-[229px]">
-      <div>
+      <div >
         <p class="text-[#F7C51E]">GIẢI ĐẤU</p>
         <h3 class="fiter text-[64px] font-black">HỆ THỐNG GIẢI ĐẤU</h3>
       </div>
@@ -208,30 +209,30 @@ export default {
             class="mySwiper_two"
           >
             <swiper-slide
-              ><img src="./image/1 317074453.png" alt="" /></swiper-slide
+              ><img src="./image/side2.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/1 317074453.png" alt="" /></swiper-slide
+              ><img src="./image/side2.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/1 317074453.png" alt="" /></swiper-slide
+              ><img src="./image/side2.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/1 317074453.png" alt="" /></swiper-slide
+              ><img src="./image/side2.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/1 317074453.png" alt="" /></swiper-slide
+              ><img src="./image/side2.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/1 317074453.png" alt="" /></swiper-slide
+              ><img src="./image/side2.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/1 317074453.png" alt="" /></swiper-slide
+              ><img src="./image/side2.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/1 317074453.png" alt="" /></swiper-slide
+              ><img src="./image/side2.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/1 317074453.png" alt=""
+              ><img src="./image/side2.png" alt=""
             /></swiper-slide>
           </swiper>
         </div>
       </div>
     </section>
     <section class="side3 px-[229px]">
-      <div class="">
+      <div class="slider2_titel">
         <h3
           class="
             flex
@@ -277,39 +278,41 @@ export default {
         >
           <swiper-slide
             ><img
-              src="./image/Quyền lợi đặc trưng 1.png"
+              src="./image/side3.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/Quyền lợi đặc trưng 1.png"
+              src="./image/side3.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/Quyền lợi đặc trưng 1.png"
+              src="./image/side3.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/Quyền lợi đặc trưng 1.png"
+              src="./image/side3.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/Quyền lợi đặc trưng 1.png"
+              src="./image/side3.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/Quyền lợi đặc trưng 1.png"
+              src="./image/side3.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/Quyền lợi đặc trưng 1.png"
+              src="./image/side3.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/Quyền lợi đặc trưng 1.png"
+              src="./image/side3.png"
               alt="" /></swiper-slide
           ><swiper-slide
-            ><img src="./image/Quyền lợi đặc trưng 1.png" alt=""
+            ><img src="./image/side3.png" alt=""
           /></swiper-slide>
+
+          <div class="page"></div>
         </swiper>
       </div>
     </section>
@@ -344,7 +347,7 @@ export default {
       </div>
       <div>
         <div class="contact_all flex px-[312px]">
-          <div class="mr-[112px] px-3">
+          <div class="contact_all mr-[112px] px-3">
             <h4 class="fiter text-[40px] font-black">THÔNG TIN CHÚNG TÔI</h4>
             <nav>
               <ul class="ml-5 mt-[20px] px-[10px]">
@@ -582,8 +585,8 @@ export default {
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-6 float-right mr-[200px]">
-        <h4 class="text-[#F7C51E] text-[20px]">GIỜ LÀM VIỆC</h4>
+      <div class="contact_lq flex flex-col gap-6 float-right mr-[200px]">
+        <h4 class="text-[#F7C51E] t ext-[20px]">GIỜ LÀM VIỆC</h4>
         <p>Thứ 2 - Thứ 6: 8.30 - 18.00</p>
         <div>
           <h5 class="flex gap-2">
@@ -617,4 +620,5 @@ export default {
 </template>
 
 <style scoped>
+
 </style>
