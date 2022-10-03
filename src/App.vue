@@ -179,14 +179,14 @@ export default {
         class="mySwiper_one"
       >
         <swiper-slide><img src="./image/side1.png" alt="" /></swiper-slide>
-        <swiper-slide><img src="./image/side1.png" alt="" /></swiper-slide
-        ><swiper-slide><img src="./image/side1.png" alt="" /></swiper-slide>
-        <swiper-slide><img src="./image/side1.png" alt="" /></swiper-slide
-        ><swiper-slide><img src="./image/side1.png" alt="" /></swiper-slide>
-        <swiper-slide><img src="./image/side1.png" alt="" /></swiper-slide
-        ><swiper-slide><img src="./image/side1.png" alt="" /></swiper-slide>
-        <swiper-slide><img src="./image/side1.png" alt="" /></swiper-slide
-        ><swiper-slide><img src="./image/side1.png" alt="" /></swiper-slide>
+        <swiper-slide><img src="./image/2.png" alt="" /></swiper-slide
+        ><swiper-slide><img src="./image/3.png" alt="" /></swiper-slide>
+        <swiper-slide><img src="./image/4.png" alt="" /></swiper-slide
+        ><swiper-slide><img src="./image/5.png" alt="" /></swiper-slide>
+        <swiper-slide><img src="./image/6.png" alt="" /></swiper-slide
+        ><swiper-slide><img src="./image/2.png" alt="" /></swiper-slide>
+        <swiper-slide><img src="./image/5.png" alt="" /></swiper-slide
+        >
       </swiper>
     </div>
   </section>
