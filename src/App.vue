@@ -21,8 +21,13 @@ export default {
     data() {
     return {
       activetab: "1",
+       scTimer: 0,
+        scY: 0,
     };
   },
+   mounted() {
+      window.addEventListener('scroll', this.handleScroll);
+    },
   setup() {
     var menu = ['Timeline ', 'Bộ môn thi đấu', 'Thông số giải','Giải đấu HOSC 2022', 'Giải súng hơi', 'Giải OSC  ','Giải OSNC']
     return {
@@ -31,19 +36,36 @@ export default {
         el: '.swiper-pagination',
 			  clickable: true,
         renderBullet: function (index, className) {
-          return '<span class="' + className+ ' show' + '">'+ '<div class="text_show">' + (menu[index])+ '</div>'+  '</span>';
+          return ' <div class="show_all"> <span class="' + className + ' show' + '">' + (menu[index]) + '</span> </div>';
         },
     },
     };
   },
+  methods: { 
+  handleScroll: function () {
+        if (this.scTimer) return;
+        this.scTimer = setTimeout(() => {
+          this.scY = window.scrollY;
+          clearTimeout(this.scTimer);
+          this.scTimer = 0;
+        }, 100);
+      },
+  toTop: function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      },
+}
 };
 </script>
   
 <template>
 <div>
    <div class="bg-[#121212]">
-    <header
-      class="flex justify-around py-2 items-center bg-transparent  mt-2 bg-black md:gap-1"
+    <div class="banner">
+ <header
+      class="header_top flex justify-between py-2 items-center bg-transparent  mt-2 md:gap-1 mx-[229px]"
     >
       <div class="logo">
         <img src="./image/OEG-White.png" alt="" />
@@ -170,6 +192,7 @@ export default {
         </ul>
       </div>
     </header>
+    </div>
       <section class="side1">
     <div class="slider2 mx-[229px]">
       <swiper
@@ -682,6 +705,16 @@ export default {
     </section>
   </footer>
   </div>
+  <transition name="fade" class="bg-[#F7C51E] rounded-[3px] bottom-[30px] right-[30px]">
+    <div id="pagetop" class="fixed right-0 bottom-0" v-show="scY > 300" @click="toTop">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+           stroke="#4a5568"
+           stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs"
+           class="webty_black">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+    </div>
+  </transition>
 </template>
 
 <style scoped>
