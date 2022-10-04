@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "build": "vite build",
-    "dev": "vite --host 192.168.1.59",
-    "preview": "vite preview --host 192.168.1.59 --port 4173"
+    "dev": "vite ",
+    "preview": "vite preview "
   },
   "dependencies": {
     "autoprefixer": "^10",
