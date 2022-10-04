@@ -706,7 +706,7 @@ export default {
     </section>
   </footer>
   </div>
-  <transition name="fade" class="bg-[#F7C51E] rounded-[3px] bottom-[30px] right-[30px]">
+  <transition name="fade" class="ontop bg-[#F7C51E] rounded-[3px] ">
     <div id="pagetop" class="fixed right-0 bottom-0" v-show="scY > 300" @click="toTop">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
            stroke="#4a5568"
