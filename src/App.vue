@@ -339,38 +339,38 @@ export default {
         >
           <swiper-slide
             ><img
-              src="./image/side3.png"
+              src="./image/slider1.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/side3.png"
+              src="./image/slider1.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/side3.png"
+              src="./image/slider1.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/side3.png"
+              src="./image/slider1.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/side3.png"
+              src="./image/slider1.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/side3.png"
+              src="./image/slider1.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/side3.png"
+              src="./image/slider1.png"
               alt="" /></swiper-slide
           ><swiper-slide
             ><img
-              src="./image/side3.png"
+              src="./image/slider1.png"
               alt="" /></swiper-slide
           ><swiper-slide
-            ><img src="./image/side3.png" alt=""
+            ><img src="./image/slider1.png" alt=""
           /></swiper-slide>
 
           <div class="page"></div>
