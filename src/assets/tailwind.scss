@@ -72,7 +72,7 @@ body {
   align-items: center;
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 840px) {
   body {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 11px;
@@ -163,12 +163,11 @@ body {
   }
 
   .contacts {
-    position: none;
-    width: 360px;    
+    position: none;   
     height: 700px;
     top: 100px;
     padding-top: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 200px; 
   }
   .from_contact{
     padding: 0;
@@ -223,3 +222,18 @@ body {
   }
 }
 
+@media only screen and (min-width: 840px) and (max-width: 1023px){
+  .slider2{
+    margin: 0 10px;
+  }
+  .fiter{
+    font-size: 30px;
+  }
+  .side2{
+    padding: 0;
+    margin: 0 10px;
+  }
+  .text_side2{
+    margin-left: 20px;
+  }
+}
