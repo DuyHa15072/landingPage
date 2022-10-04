@@ -4,30 +4,36 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 // Import Swiper styles
 import "swiper/css";
 
+import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./assets/style.scss";
 
 // import required modules
-import { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation, Pagination,EffectFade } from "swiper";
 
 export default {
   components: {
     Swiper,
     SwiperSlide,
   },
-  setup() {
-    var menu = ['Slide 1', 'Slide 2', 'Slide 3','Slide 4', 'Slide 5', 'Slide 6','Slide 7', 'Slide 8', 'Slide 9']
+    data() {
     return {
-      modules: [Autoplay, Pagination, Navigation],
-      pagination: {
-        clickable: true,
-        
+      activetab: "1",
+    };
+  },
+  setup() {
+    var menu = ['Timeline ', 'Bộ môn thi đấu', 'Thông số giải','Giải đấu HOSC 2022', 'Giải súng hơi', 'Giải OSC  ','Giải OSNC']
+    return {
+      modules: [Autoplay, Pagination, Navigation,EffectFade],
+       paginationShow: {
+        el: '.swiper-pagination',
+			  clickable: true,
         renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (menu[index ]) + "</span>";
+          return '<span class="' + className+ ' show' + '">'+ '<div class="text_show">' + (menu[index])+ '</div>'+  '</span>';
         },
-      },
+    },
     };
   },
 };
@@ -35,14 +41,14 @@ export default {
   
 <template>
 <div>
-  <section class="side1 parent1">
+   <div class="bg-[#121212]">
     <header
-      class="flex  items-center bg-transparent child1 mt-2"
+      class="flex justify-around py-2 items-center bg-transparent  mt-2 bg-black md:gap-1"
     >
       <div class="logo">
         <img src="./image/OEG-White.png" alt="" />
       </div>
-      <div class="Language flex items-center float-right absolute right-[10px]">
+      <div class="Language flex items-center float-right right-[10px]">
         <ul class="group relative">
           <li class="mb-[10px]">
             <a
@@ -164,10 +170,12 @@ export default {
         </ul>
       </div>
     </header>
-    <div>
+      <section class="side1">
+    <div class="slider2 mx-[229px]">
       <swiper
         :direction="'vertical'"
         :loop="true"
+         :effect="'fade'"
         :autoplay="{
           delay: 5500,
           disableOnInteraction: false,
@@ -190,7 +198,6 @@ export default {
       </swiper>
     </div>
   </section>
-  <div class="bg-[#121212] ">
     <section class="side2 px-[229px]">
       <div >
         <p class="text-[#F7C51E]">GIẢI ĐẤU</p>
@@ -200,7 +207,8 @@ export default {
         <div class="">
           <swiper
           :loop="true"
-            :pagination="pagination"
+            :pagination="paginationShow"
+            
             :modules="modules"
             :autoplay="{
               delay: 5500,
@@ -221,33 +229,31 @@ export default {
             ><swiper-slide
               ><img src="./image/slider2.png" alt="" /></swiper-slide
             ><swiper-slide
-              ><img src="./image/side2.png" alt="" /></swiper-slide
-            ><swiper-slide
-              ><img src="./image/side2.png" alt="" /></swiper-slide
-            ><swiper-slide
-              ><img src="./image/side2.png" alt=""
-            /></swiper-slide>
+              ><img src="./image/side2.png" alt="" /></swiper-slide>
+            <div class="swiper-pagination box_slider">
+             
+            </div>
           </swiper>
+          
         </div>
       </div>
     </section>
     <section class="side3 px-[229px]">
       <div class="slider2_titel">
-        <h3
-          class="
-            flex
-            justify-center
-            text-[48px]
-            font-black
-            relative
-            top-[103px]
-            text_title
-          "
-        >
-          <p class="pr-[47px] text-[#F7C51E]">QUYỀN LỢI STUDENT CUP</p>
-          QUYỀN LỢI NATIONAL
-        </h3>
-        <p
+        <div id="tabs" class="container">
+    <div class="tabs flex justify-around relative top-[7rem]">
+      <button
+        v-on:click="activetab = '1'"
+        v-bind:class="[activetab === '1' ? 'active' : 'text-[#ffff]']"
+        class="text-[48px] text-[#F7C51E] font-black text-show">QUYỀN LỢI STUDENT CUP</button
+      >
+      <button
+        v-on:click="activetab = '2'"
+        v-bind:class="[activetab === '2' ? 'active' : 'text-[#ffff]']"
+        class="text-[48px] text-[#F7C51E] font-black text-show">QUYỀN LỢI NATIONAL</button
+      >
+    </div>
+     <p
           class="
           text_backgroup
             flex
@@ -259,8 +265,63 @@ export default {
         >
           OEG ESPORTS
         </p>
-      </div>
-      <div class="">
+    <div class="content">
+      <div v-if="activetab === '1'" class="tabcontent">
+      <swiper
+          :slidesPerView="1"
+          :spaceBetween="0"
+          :loop="true"
+          :autoplay="{
+            delay: 5500,
+            disableOnInteraction: false,
+          }"
+          :pagination="{
+            clickable: true,
+          }"
+          :navigation="true"
+          :modules="modules"
+          class="mySwiper_three"
+        >
+          <swiper-slide
+            ><img
+              src="./image/side3.png"
+              alt="" /></swiper-slide
+          ><swiper-slide
+            ><img
+              src="./image/side3.png"
+              alt="" /></swiper-slide
+          ><swiper-slide
+            ><img
+              src="./image/side3.png"
+              alt="" /></swiper-slide
+          ><swiper-slide
+            ><img
+              src="./image/side3.png"
+              alt="" /></swiper-slide
+          ><swiper-slide
+            ><img
+              src="./image/side3.png"
+              alt="" /></swiper-slide
+          ><swiper-slide
+            ><img
+              src="./image/side3.png"
+              alt="" /></swiper-slide
+          ><swiper-slide
+            ><img
+              src="./image/side3.png"
+              alt="" /></swiper-slide
+          ><swiper-slide
+            ><img
+              src="./image/side3.png"
+              alt="" /></swiper-slide
+          ><swiper-slide
+            ><img src="./image/side3.png" alt=""
+          /></swiper-slide>
+
+          <div class="page"></div>
+        </swiper>
+      </div>  
+      <div v-if="activetab === '2'" class="tabcontent">
         <swiper
           :slidesPerView="1"
           :spaceBetween="0"
@@ -314,6 +375,10 @@ export default {
 
           <div class="page"></div>
         </swiper>
+      </div>
+    </div>
+  </div>
+       
       </div>
     </section>
     <section class="contact pb-[195px] relative">
@@ -589,7 +654,7 @@ export default {
         <h4 class="text-[#F7C51E] t ext-[20px]">GIỜ LÀM VIỆC</h4>
         <p>Thứ 2 - Thứ 6: 8.30 - 18.00</p>
         <div>
-          <h5 class="flex gap-2">
+          <h5 class="flex gap-2 font-black">
             <svg
               width="2"
               height="19"
