@@ -223,7 +223,7 @@ export default {
   </section>
     <section class="side2 px-[229px]">
       <div class="text_side2">
-        <p class="text-[#F7C51E]">Giải Đấu</p>
+        <p class="text-[#F7C51E]">{{$t('message.hello')}}</p>
         <h3 class="fiter text-[64px] font-black">HỆ THỐNG GIẢI ĐẤU</h3>
       </div>
       <div class="mt-[0]">
@@ -404,7 +404,7 @@ export default {
        
       </div>
     </section>
-    <section class="contact pb-[195px] relative">
+    <section class="contact relative">
       <div class="title">
         <h3
           class="
@@ -506,7 +506,8 @@ export default {
                 LIÊN HỆ
               </h3>
               <form action="" class="form_contact">
-                <input type="text" placeholder="Họ tên*" class="input_bg block py-3" />
+               <div class="input_all">
+                 <input type="text" placeholder="Họ tên*" class="input_bg block py-3 " />
                 <input type="text" placeholder="Đơn vị/Công ty*" class="input_bg block py-3" />
                 <input type="text" placeholder="Chức vụ*" class="input_bg block py-3" />
                 <input type="email" placeholder="Email*" class="input_bg block py-3" />
@@ -517,11 +518,11 @@ export default {
                   class="
                     bg-submit
                     bg-[#F7C51E]
-                    mt-[40px]
                     text-black text-[20px]
-                    rounded-[3px]
+                    rounded
                   "
                 />
+               </div>
               </form>
             </div>
           </div>
@@ -674,7 +675,7 @@ export default {
         </div>
       </div>
       <div class="contact_lq flex flex-col gap-6 float-right mr-[200px]">
-        <h4 class="text-[#F7C51E] t ext-[20px]">GIỜ LÀM VIỆC</h4>
+        <h4 class="text-[#F7C51E] t ext-[20px] font-black">GIỜ LÀM VIỆC</h4>
         <p>Thứ 2 - Thứ 6: 8.30 - 18.00</p>
         <div>
           <h5 class="flex gap-2 font-black">

@@ -30,9 +30,12 @@ body {
 .Contact_information {
   background: url('./../image/Group\ 10.png');
 }
-
+.contact{
+  top: -209px;
+}
 .contacts {
   background: url('./../image/Mask\ group.png');
+  
 }
 
 .parent2 {
@@ -71,8 +74,12 @@ body {
   padding: 10px 231px;
   align-items: center;
 }
+input{
+  margin: auto;
+}
 
 @media only screen and (max-width: 840px) {
+  
   body {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 11px;
@@ -201,7 +208,8 @@ body {
     margin-bottom: 28px;
   }
   .bg-submit{
-    padding: 10px 137px;
+    padding: 10px 120px;
+    margin-left: 26px;
   }
   //// footer
   .nav_contact{
@@ -219,6 +227,9 @@ body {
   }
   .header_top{
     margin: 0 20px;
+  }
+  input{
+    margin: auto;
   }
 }
 
