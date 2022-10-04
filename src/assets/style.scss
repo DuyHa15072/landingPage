@@ -152,6 +152,14 @@
     background-color: #eeee08;
     color: black;
   }
+  .swiper-button-prev{
+    color:  white;
+    display: none;
+  }
+  .swiper-button-next{
+    color: white;
+    display: none;
+  }
 };
   
 	@media (min-width: 1024px) { }

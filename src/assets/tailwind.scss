@@ -78,6 +78,9 @@ body {
   .logo {
     max-width: 12%;
   }
+  .box_slider{
+    display: none;
+  }
 
   .side2 {
     padding: 10px;
@@ -86,7 +89,12 @@ body {
   .side3 {
     padding: 10px;
   }
-
+  .tabs{
+   top: 25px;
+  }
+  .text-show{
+    font-size: 11px;
+  }
   .text_title {
     font-size: 24px;
   }
