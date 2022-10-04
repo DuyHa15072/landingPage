@@ -222,8 +222,8 @@ export default {
     </div>
   </section>
     <section class="side2 px-[229px]">
-      <div >
-        <p class="text-[#F7C51E]">GIẢI ĐẤU</p>
+      <div class="text_side2">
+        <p class="text-[#F7C51E]">Giải Đấu</p>
         <h3 class="fiter text-[64px] font-black">HỆ THỐNG GIẢI ĐẤU</h3>
       </div>
       <div class="mt-[0]">
