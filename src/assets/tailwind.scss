@@ -92,6 +92,10 @@ input{
     background: black;
     user-select: none;
   }
+  .nav_footer li svg{
+      width: 20px;
+      height: 20px;
+  }
   .show_model svg{
     width: 80px;
     height: 80px;
@@ -222,7 +226,7 @@ input{
     margin-bottom: 28px;
   }
   .bg-submit{
-    padding: 10px 145px;
+    padding: 10px 80px;
   }
   //// footer
   .nav_contact{
@@ -253,10 +257,19 @@ input{
   .nav_side3{
       margin: 0;
   }
-  
+  .text_title2 {
+    top: 213px;
+    right: 111px;
+    font-size: 24px;
+}
 }
 
 @media only screen and (min-width: 840px) and (max-width: 1023px){
+  .text_title2 {
+    top: 213px;
+    right: 111px;
+    font-size: 24px;
+}
   .slider2{
     margin: 0 10px;
   }

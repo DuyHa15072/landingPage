@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
 import "swiper/css";
-import Swal from "sweetalert2";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -44,11 +43,14 @@ export default {
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
   },
+  created(){
+    console.log(this.$i18n.locale)
+  },
   setup() {
     var menu = [
       "Timeline",
       "Bộ môn thi đấu",
-      "Thông số giải",
+      "Thôngsố giải",
       "Giải đấu HOSC 2022",
       "Giải súng hơi",
       "Giải OSC  ",
@@ -61,15 +63,16 @@ export default {
         clickable: true,
         renderBullet: function (index, className) {
           return (
-            '<span class="' +
+            '<div class="' +
             className +
             " show" +
             '">' +
             menu[index] +
-            "</span>"
+            "</div>"
           );
         },
       },
+       
     };
   },
   methods: {
@@ -96,7 +99,7 @@ export default {
         console.log(this.isShowModal);
     },
     onSubmit() {
-      if (this.form.name.length < 6) {
+      if (!this.form.name) {
         this.error = {
           text: "Nhập đúng điều kiện",
           status: true,
@@ -129,6 +132,7 @@ export default {
         this.success = {
           status: true,
         };
+        this.error='',
         this.form.name='',
         this.form.company='',
         this.form.service='',
@@ -341,7 +345,7 @@ export default {
       <section class="side2 px-[229px]">
         <div class="text_side2">
           <p class="text-[#F7C51E]">{{ $t("text_giaidau") }}</p>
-          <h3 class="fiter text-[64px] font-black">HỆ THỐNG GIẢI ĐẤU</h3>
+          <h3 class="fiter text-[64px] font-black">{{ $t("text_2") }}</h3>
         </div>
         <div class="mt-[0]">
           <div class="">
@@ -383,14 +387,14 @@ export default {
                 v-bind:class="[activetab === '1' ? 'active' : 'text-[#ffff]']"
                 class="text-[48px] text-[#F7C51E] font-black text-show"
               >
-                QUYỀN LỢI NATIONAL
+              {{ $t("text_national") }}
               </button>
               <button
                 v-on:click="activetab = '2'"
                 v-bind:class="[activetab === '2' ? 'active' : 'text-[#ffff]']"
                 class="text-[48px] text-[#F7C51E] font-black text-show"
               >
-               QUYỀN LỢI STUDENT CUP
+              {{ $t("text_studentcup") }}
                 
               </button>
             </div>
@@ -503,7 +507,7 @@ export default {
               top-[135px]
             "
           >
-            LIÊN HỆ
+          {{ $t("text_contact") }}
           </h3>
           <p
             class="
@@ -521,7 +525,7 @@ export default {
         <div>
           <div class="contact_all flex pl-[312px]">
             <div class="contact_all mr-[112px] px-3">
-              <h4 class="fiter text-[40px] font-black">THÔNG TIN CHÚNG TÔI</h4>
+              <h4 class="fiter text-[40px] font-black">{{ $t("text_about") }}</h4>
               <nav>
                 <ul class="ml-5 mt-[20px] px-[10px] nav_side3">
                   <li class="flex gap-[5px] items-center py-[10px]">
@@ -538,7 +542,7 @@ export default {
                         fill="white"
                       />
                     </svg>
-                   <p> <strong class="">Địa chỉ:</strong> Phố 131 Thái Hà, Phường Trung Liệt, Quận Đống Đa,<br />Thành
+                   <p> <strong class="">{{ $t("text_contact") }}</strong> Phố 131 Thái Hà, Phường Trung Liệt, Quận Đống Đa,<br />Thành
                   phố Hà Nội</p>
                   </li>
                   <li class="flex gap-[5px] items-center my-[10px]">
@@ -588,39 +592,30 @@ export default {
                     mb-[30px]
                   "
                 >
-                  LIÊN HỆ
+                {{ $t("text_contact") }}
                 </h3>
                 <form @submit.prevent="onSubmit" class="form_contact" autocomplete="off">
                   <div class="input_all">
-                    <p class="error-text text-red-500 text-[15px]" v-if="error.status">
-                      {{ error.text }}
-                    </p>
                     <input
                       id="name"
                       :class="{ error: error.status}"
                       type="text"
                       v-model="form.name"
-                      placeholder="Họ tên*"
+                      :placeholder="$t('text_name')"
                       class="input_bg block py-3"
                     />
-                    <p class="error-text text-red-500 text-[15px]" v-if="error.status">
-                      {{ error.text }}
-                    </p>
                     <input
                       type="text"
                       :class="{ error: error.status }"
                       v-model="form.company"
-                      placeholder="Đơn vị/Công ty*"
+                      :placeholder="$t('text_company')"
                       class="input_bg block py-3"
                     />
-                    <p class="error-text text-red-500 text-[15px]" v-if="error.status">
-                      {{ error.text }}
-                    </p>
                     <input
                       type="text"
                       :class="{ error: error.status }"
                       v-model="form.service"
-                      placeholder="Chức vụ*"
+                      :placeholder="$t('text_position')"
                       class="input_bg block py-3"
                     />
                     <p class="error-text text-red-500 text-[15px]" v-if="error.status">
@@ -630,17 +625,14 @@ export default {
                       type="email"
                       :class="{ error: error.status}"
                       v-model="form.email"
-                      placeholder="Email*"
+                      placeholder="Email"
                       class="input_bg block py-3"
                     />
-                    <p class="error-text text-red-500 text-[15px]" v-if="error.status">
-                      {{ error.text }}
-                    </p>
                     <input
                       type="text"
                       :class="{ error: error.status }"
                       v-model="form.phone"
-                      placeholder="Số điện thoại*"
+                      :placeholder="$t('text_phone')"
                       class="input_bg block py-3"
                     />
                     <div class="flex justify-center">
@@ -653,7 +645,8 @@ export default {
                         rounded
                       "
                     >
-                      Gửi
+                   {{$t('text_submit')}}
+                    
                     </button>
                     </div>
                   </div>
@@ -674,7 +667,7 @@ export default {
           />
           <div class="nav_contact px-[85px]">
             <nav>
-              <h4 class="text-[#F7C51E] text-[20px] font-black">LIÊN HỆ</h4>
+              <h4 class="text-[#F7C51E] text-[20px] font-black">{{ $t("text_contact") }}</h4>
               <ul class="">
                 <li class="flex gap-[5px] items-center py-[10px]">
                   <svg
@@ -690,7 +683,7 @@ export default {
                       fill="white"
                     />
                   </svg>
-                  <p> <strong class="">Địa chỉ:</strong> Phố 131 Thái Hà, Phường Trung Liệt, <br/>Quận Đống Đa,Thành
+                  <p> <strong class="">{{ $t("text_address") }}:</strong> Phố 131 Thái Hà, Phường Trung Liệt, <br/>Quận Đống Đa,Thành
                   phố Hà Nội</p>
                 </li>
                 <li class="flex gap-[5px] items-center my-[10px]">
@@ -707,7 +700,7 @@ export default {
                       d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
                     />
                   </svg>
-                  <strong>Phone:</strong> 02466565025
+                  <strong>{{ $t("text_phone") }}</strong> 02466565025
                 </li>
                 <li class="flex gap-[5px] items-center my-[10px]">
                   <svg
@@ -730,7 +723,7 @@ export default {
               </ul>
             </nav>
             <div>
-              <h4 class="text-[#F7C51E] text-[20px] font-black">KẾT NỐI VỚI CHÚNG TÔI</h4>
+              <h4 class="text-[#F7C51E] text-[20px] font-black">{{ $t("text_jhonWith") }}</h4>
               <nav class="py-2">
                 <ul class="flex gap-6 nav_footer">
                   <li>
@@ -809,8 +802,8 @@ export default {
           </div>
         </div>
         <div class="contact_lq flex flex-col gap-6 float-right mr-[200px]">
-          <h4 class="text-[#F7C51E] text-[20px] font-black">GIỜ LÀM VIỆC</h4>
-          <p>Thứ 2 - Thứ 6: 8.30 - 18.00</p>
+          <h4 class="text-[#F7C51E] text-[20px] font-black">{{ $t("text_working") }}</h4>
+          <p>{{ $t("text_time") }}</p>
           <div>
             <h5 class="flex gap-2 font-black">
               <svg
@@ -822,11 +815,10 @@ export default {
               >
                 <rect width="2" height="19" fill="#F7C51E" />
               </svg>
-              TƯ VẤN HỖ TRỢ GIẢI ĐẤU
+              {{ $t("text_support") }}
             </h5>
-            <p>
-              Để được tư vấn và hỗ trợ miễn phí về việc tổ chức giải <br />đấu,
-              xin vui lòng liên hệ tới OEG ESPORTS qua Fanpage dưới đây.
+            <p class="width-469px">
+              {{ $t("text_supportAll") }}
             </p>
           </div>
           <div class="mb-[147px]">
@@ -843,7 +835,7 @@ export default {
   <transition name="fade" class="ontop bg-[#F7C51E] rounded-[3px]">
     <div
       id="pagetop"
-      class="fixed right-0 bottom-0"
+      class="fixed right-0 bottom-0 in"
       v-show="scY > 300"
       @click="toTop"
     >
@@ -872,9 +864,6 @@ export default {
   height: 409px;
   z-index: 99999;
   justify-content: center;
- }
- .success{
-  color: blue;
  }
 .over_lay{
   position: fixed; 
