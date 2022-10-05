@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
 import "swiper/css";
-
+import Swal from "sweetalert2";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -22,10 +22,10 @@ export default {
     return {
       form: {
         name: "",
-        company: " ",
-        service: " ",
-        email: " ",
-        phone: " ",
+        company: "",
+        service: "",
+        email: "",
+        phone: "",
       },
       error: {
         text: "",
@@ -36,6 +36,7 @@ export default {
         status: false,
       },
       activetab: "1",
+      isShow : false,
       scTimer: 0,
       scY: 0,
     };
@@ -87,7 +88,7 @@ export default {
       });
     },
     onSubmit() {
-      if (this.form.name.length < 6 ) {
+      if (this.form.name.length < 6) {
         this.error = {
           text: "Look failed!",
           status: true,
@@ -97,6 +98,20 @@ export default {
           text: "Look great!",
           status: true,
         };
+        this.form.name='',
+        this.form.company='',
+        this.form.service='',
+        this.form.email='',
+        this.form.phone='',
+        Swal.fire({
+          position: "center",
+          background : "black",
+          icon: "success",
+          title: "THÀNH CÔNG",
+          text:'Chúng tôi sẽ liên hệ đến bạn trong thời gian sớm nhất  Xin Cám ơn !',
+          showConfirmButton: false,
+          timer: 1500,
+        });
       } else {
         this.error = {
           text: "",
@@ -110,6 +125,17 @@ export default {
   
 <template>
   <div>
+    <div class="show_model flex flex-col items-center pt-5 px-5" v-if="ishow">
+      <svg xmlns="http://www.w3.org/2000/svg" width="87" height="87" fill="currentColor" class="bi bi-check-circle text-[#F7C51E]"  viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+     <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+     </svg>
+      <h3 class="text-[48px] text-[#F7C51E] font-black">THÀNH CÔNG</h3>
+      <p>Chúng tôi sẽ liên hệ đến bạn trong thời gian sớm nhất
+      </p>
+       <span>Xin cảm ơn!</span>
+      
+    </div>
     <div class="bg-[#121212]">
       <div class="banner">
         <header
@@ -542,36 +568,59 @@ export default {
                       placeholder="Họ tên*"
                       class="input_bg block py-3"
                     />
-                    <p class="error-text" v-if="error.status">{{ error.text }}</p>
+                    <p class="error-text" v-if="error.status">
+                      {{ error.text }}
+                    </p>
                     <input
                       type="text"
+                      :class="{ error: error.status, success: success.status }"
+                      v-model="form.company"
                       placeholder="Đơn vị/Công ty*"
                       class="input_bg block py-3"
                     />
+                    <p class="error-text" v-if="error.status">
+                      {{ error.text }}
+                    </p>
                     <input
                       type="text"
+                      :class="{ error: error.status, success: success.status }"
+                      v-model="form.service"
                       placeholder="Chức vụ*"
                       class="input_bg block py-3"
                     />
+                    <p class="error-text" v-if="error.status">
+                      {{ error.text }}
+                    </p>
                     <input
                       type="email"
+                      :class="{ error: error.status, success: success.status }"
+                      v-model="form.email"
                       placeholder="Email*"
                       class="input_bg block py-3"
                     />
+                    <p class="error-text" v-if="error.status">
+                      {{ error.text }}
+                    </p>
                     <input
                       type="text"
+                      :class="{ error: error.status, success: success.status }"
+                      v-model="form.phone"
                       placeholder="Số điện thoại*"
                       class="input_bg block py-3"
                     />
-                    <input
+                    <p class="error-text" v-if="error.status">
+                      {{ error.text }}
+                    </p>
+                    <button
                       type="submit"
-                      value="Gửi"
                       class="
                         bg-submit bg-[#F7C51E]
                         text-black text-[20px]
                         rounded
                       "
-                    />
+                    >
+                      Gửi
+                    </button>
                   </div>
                 </form>
               </div>
@@ -590,7 +639,7 @@ export default {
           />
           <div class="nav_contact px-[85px]">
             <nav>
-              <h4 class="text-[#F7C51E] text-[20px]">LIÊN HỆ</h4>
+              <h4 class="text-[#F7C51E] text-[20xp]">LIÊN HỆ</h4>
               <ul class="">
                 <li class="flex gap-[5px] items-center py-[10px]">
                   <svg
@@ -725,7 +774,7 @@ export default {
           </div>
         </div>
         <div class="contact_lq flex flex-col gap-6 float-right mr-[200px]">
-          <h4 class="text-[#F7C51E] t ext-[20px] font-black">GIỜ LÀM VIỆC</h4>
+          <h4 class="text-[#F7C51E] text-[20px] font-black">GIỜ LÀM VIỆC</h4>
           <p>Thứ 2 - Thứ 6: 8.30 - 18.00</p>
           <div>
             <h5 class="flex gap-2 font-black">
@@ -782,4 +831,18 @@ export default {
 </template>
 
 <style scoped>
+ .show_model{
+  position: fixed;
+  position: center;
+  top: 100px;
+  right: 410px;
+  background-image: url('./image/Mask group.png');
+  width:auto;
+  height: 309px;
+  z-index: 99999;
+ }
+ .success{
+  color: blue;
+ }
+
 </style>

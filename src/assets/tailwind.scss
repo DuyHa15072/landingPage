@@ -187,7 +187,8 @@ input{
   .contact_all {
     margin: 0;
     padding: 10px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin-top: 65px;
   }
   .contact_all h4 {
     margin-left: 20px;
@@ -222,6 +223,9 @@ input{
   .Contact_information img{
     display: none;
   }
+  .model{
+     background-color: black;
+  }
   .contact_lq{
     padding-top: 30px;
     margin: 0;
@@ -255,4 +259,21 @@ input{
     width: 30px;
    height: 50px;
   }
+  .text_backgroup{
+    font-size: 20px;
+  }
+  .from_contact{
+    padding: 0;
+    margin: 0;
+  }
+  .contact_all {
+    margin: 0;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-top: 65px;
+  }
+  .contact_all h4 {
+    margin-left: 20px;
+  }
+  
 }

@@ -123,6 +123,7 @@
     width:100%;
     height:100%;
     position: relative;
+    top: -34px;
     bottom: 33px;
   }
   .box_slider{
@@ -156,7 +157,7 @@
     display: none;
   }
 };
-@media only screen and (min-width: 740px) and (max-width: 1023px){
+@media only screen and (min-width: 740px) and (max-width: 1368px){
   .mySwiper_one {
     width:100%;
     height: 500px;
@@ -164,5 +165,12 @@
   .mySwiper_two {
     width: 100%;
     height: 529px;
+}
+.mySwiper_three{
+  width:100%;
+  height:100%;
+  position: relative;
+  top: -34px;
+  bottom: 33px;
 }
 }
