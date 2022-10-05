@@ -31,7 +31,7 @@ body {
   background: url('./../image/Group\ 10.png');
 }
 .contact{
-  top: -209px;
+  top: -270px;  
 }
 .contacts {
   background: url('./../image/Mask\ group.png');
@@ -66,13 +66,14 @@ body {
   border-radius: 3px;
   background: transparent;
   padding-left: 10px;
-  padding-right: 300px;
+   width: 100%;
   margin-bottom: 28px;
 }
 
 .bg-submit{
-  padding: 10px 231px;
+  padding: 10px 277px;
   align-items: center;
+  
 }
 input{
   margin: auto;
@@ -213,8 +214,7 @@ input{
     margin-bottom: 28px;
   }
   .bg-submit{
-    padding: 10px 120px;
-    margin-left: 26px;
+    padding: 10px 119px;
   }
   //// footer
   .nav_contact{

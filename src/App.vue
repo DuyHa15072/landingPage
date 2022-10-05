@@ -36,7 +36,7 @@ export default {
         status: false,
       },
       activetab: "1",
-      isShow : false,
+      isShowModal : false,
       scTimer: 0,
       scY: 0,
     };
@@ -87,10 +87,18 @@ export default {
         behavior: "smooth",
       });
     },
+    showModel(){
+       this.isShowModal = true
+        console.log(this.isShowModal);
+    },
+    hide(){
+        this.isShowModal = false
+        console.log(this.isShowModal);
+    },
     onSubmit() {
       if (this.form.name.length < 6) {
         this.error = {
-          text: "Look failed!",
+          text: "Nhập đúng điều kiện",
           status: true,
         };
       } else if (this.form.name.length > 5) {
@@ -103,15 +111,7 @@ export default {
         this.form.service='',
         this.form.email='',
         this.form.phone='',
-        Swal.fire({
-          position: "center",
-          background : "black",
-          icon: "success",
-          title: "THÀNH CÔNG",
-          text:'Chúng tôi sẽ liên hệ đến bạn trong thời gian sớm nhất  Xin Cám ơn !',
-          showConfirmButton: false,
-          timer: 1500,
-        });
+        this.showModel()
       } else {
         this.error = {
           text: "",
@@ -119,13 +119,17 @@ export default {
         };
       }
     },
+    setLocale(locale){
+      this.$i18n.locale = locale
+    }
   },
 };
 </script>
   
 <template>
-  <div>
-    <div class="show_model flex flex-col items-center pt-5 px-5" v-if="ishow">
+<div class="flex items-cente fixed z-10">
+ <div class="over_lay" @click="hide" v-if="isShowModal">
+ <div class="show_model flex flex-col items-center pt-5 px-5">
       <svg xmlns="http://www.w3.org/2000/svg" width="87" height="87" fill="currentColor" class="bi bi-check-circle text-[#F7C51E]"  viewBox="0 0 16 16">
     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
      <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
@@ -134,8 +138,10 @@ export default {
       <p>Chúng tôi sẽ liên hệ đến bạn trong thời gian sớm nhất
       </p>
        <span>Xin cảm ơn!</span>
-      
-    </div>
+ </div>
+ </div>
+</div>
+  <div>
     <div class="bg-[#121212]">
       <div class="banner">
         <header
@@ -158,7 +164,8 @@ export default {
             <ul class="group relative">
               <li class="mb-[10px]">
                 <a
-                  href=""
+                @click="setLocale('en')"
+                  href="#"
                   class="menu-item group-hover:border-white flex items-center"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -206,7 +213,8 @@ export default {
                 "
               >
                 <a
-                  href="/name"
+                @click="setLocale('vn')"
+                  href="#"
                   class="menu-item hover:border-white flex items-center"
                 >
                   <svg
@@ -309,7 +317,7 @@ export default {
       </section>
       <section class="side2 px-[229px]">
         <div class="text_side2">
-          <p class="text-[#F7C51E]">{{ $t("message.hello") }}</p>
+          <p class="text-[#F7C51E]">{{ $t("text") }}</p>
           <h3 class="fiter text-[64px] font-black">HỆ THỐNG GIẢI ĐẤU</h3>
         </div>
         <div class="mt-[0]">
@@ -352,14 +360,15 @@ export default {
                 v-bind:class="[activetab === '1' ? 'active' : 'text-[#ffff]']"
                 class="text-[48px] text-[#F7C51E] font-black text-show"
               >
-                QUYỀN LỢI STUDENT CUP
+                QUYỀN LỢI NATIONAL
               </button>
               <button
                 v-on:click="activetab = '2'"
                 v-bind:class="[activetab === '2' ? 'active' : 'text-[#ffff]']"
                 class="text-[48px] text-[#F7C51E] font-black text-show"
               >
-                QUYỀN LỢI NATIONAL
+               QUYỀN LỢI STUDENT CUP
+                
               </button>
             </div>
             <p
@@ -487,7 +496,7 @@ export default {
           </p>
         </div>
         <div>
-          <div class="contact_all flex px-[312px]">
+          <div class="contact_all flex pl-[312px]">
             <div class="contact_all mr-[112px] px-3">
               <h4 class="fiter text-[40px] font-black">THÔNG TIN CHÚNG TÔI</h4>
               <nav>
@@ -506,8 +515,8 @@ export default {
                         fill="white"
                       />
                     </svg>
-                    Địa chỉ: Số 131 Thái Hà, Phường Trung Liệt, Quận Đống
-                    Đa,Thành phố Hà Nội
+                   <p> <strong class="">Địa chỉ:</strong> Phố 131 Thái Hà, Phường Trung Liệt, Quận Đống Đa,<br />Thành
+                  phố Hà Nội</p>
                   </li>
                   <li class="flex gap-[5px] items-center my-[10px]">
                     <svg
@@ -611,16 +620,19 @@ export default {
                     <p class="error-text" v-if="error.status">
                       {{ error.text }}
                     </p>
-                    <button
+                    <div class="flex justify-center">
+                      <button
                       type="submit"
                       class="
-                        bg-submit bg-[#F7C51E]
+                        bg-submit 
+                       bg-[#F7C51E]
                         text-black text-[20px]
                         rounded
                       "
                     >
                       Gửi
                     </button>
+                    </div>
                   </div>
                 </form>
               </div>
@@ -639,7 +651,7 @@ export default {
           />
           <div class="nav_contact px-[85px]">
             <nav>
-              <h4 class="text-[#F7C51E] text-[20xp]">LIÊN HỆ</h4>
+              <h4 class="text-[#F7C51E] text-[20px] font-black">LIÊN HỆ</h4>
               <ul class="">
                 <li class="flex gap-[5px] items-center py-[10px]">
                   <svg
@@ -655,8 +667,8 @@ export default {
                       fill="white"
                     />
                   </svg>
-                  Địa chỉ:Số 131 Thái Hà, Phường Trung Liệt, Quận Đống Đa,<br />Thành
-                  phố Hà Nội
+                  <p> <strong class="">Địa chỉ:</strong> Phố 131 Thái Hà, Phường Trung Liệt, Quận Đống Đa,<br />Thành
+                  phố Hà Nội</p>
                 </li>
                 <li class="flex gap-[5px] items-center my-[10px]">
                   <svg
@@ -695,7 +707,7 @@ export default {
               </ul>
             </nav>
             <div>
-              <h4 class="text-[#F7C51E] text-[20px]">KẾT NỐI VỚI CHÚNG TÔI</h4>
+              <h4 class="text-[#F7C51E] text-[20px] font-black">KẾT NỐI VỚI CHÚNG TÔI</h4>
               <nav class="py-2">
                 <ul class="flex gap-6">
                   <li>
@@ -832,17 +844,28 @@ export default {
 
 <style scoped>
  .show_model{
-  position: fixed;
-  position: center;
-  top: 100px;
-  right: 410px;
   background-image: url('./image/Mask group.png');
   width:auto;
-  height: 309px;
+  height: 409px;
   z-index: 99999;
+  justify-content: center;
  }
  .success{
   color: blue;
  }
-
+.over_lay{
+  position: fixed; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(115, 113, 113, 0.5); 
+  z-index: 2; 
+  cursor: pointer; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>
