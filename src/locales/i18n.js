@@ -5,10 +5,13 @@ const i18n = new createI18n({
    fallbackLocale: 'vn',
    messages:{
     en:{
-      text : 'Hello'
+      text_giaidau : 'TOURNAMENTS',
+      text_2 : 'TEAM SYSTEM',
+      text_3 : ''
     },
     vn:{
-      text: 'xin chào'
+      text_giaidau: 'GIẢI ĐẤU',
+      text_2 : 'HỆ THỐNG GIẢI ĐẤU'
     }
    }
 })

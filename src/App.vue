@@ -101,9 +101,32 @@ export default {
           text: "Nhập đúng điều kiện",
           status: true,
         };
-      } else if (this.form.name.length > 5) {
+      } else if (!this.form.company) {
+        this.error = {
+          text: "Nhập đúng điều kiện",
+          status: true,
+        };
+      }
+      else if (!this.form.service) {
+        this.error = {
+          text: "Nhập đúng điều kiện",
+          status: true,
+        };
+      }
+      else if (!this.form.email) {
+        this.error = {
+          text: "Nhập đúng điều kiện",
+          status: true,
+        };
+      }
+      else if (!this.form.phone) {
+        this.error = {
+          text: "Nhập đúng điều kiện",
+          status: true,
+        };
+      }
+      else if (this.form.name.length > 5) {
         this.success = {
-          text: "Look great!",
           status: true,
         };
         this.form.name='',
@@ -164,7 +187,7 @@ export default {
             <ul class="group relative">
               <li class="mb-[10px]">
                 <a
-                @click="setLocale('en')"
+                @click="setLocale('vn')"
                   href="#"
                   class="menu-item group-hover:border-white flex items-center"
                   ><svg
@@ -213,7 +236,7 @@ export default {
                 "
               >
                 <a
-                @click="setLocale('vn')"
+                @click="setLocale('en')"
                   href="#"
                   class="menu-item hover:border-white flex items-center"
                 >
@@ -317,7 +340,7 @@ export default {
       </section>
       <section class="side2 px-[229px]">
         <div class="text_side2">
-          <p class="text-[#F7C51E]">{{ $t("text") }}</p>
+          <p class="text-[#F7C51E]">{{ $t("text_giaidau") }}</p>
           <h3 class="fiter text-[64px] font-black">HỆ THỐNG GIẢI ĐẤU</h3>
         </div>
         <div class="mt-[0]">
@@ -500,7 +523,7 @@ export default {
             <div class="contact_all mr-[112px] px-3">
               <h4 class="fiter text-[40px] font-black">THÔNG TIN CHÚNG TÔI</h4>
               <nav>
-                <ul class="ml-5 mt-[20px] px-[10px]">
+                <ul class="ml-5 mt-[20px] px-[10px] nav_side3">
                   <li class="flex gap-[5px] items-center py-[10px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -567,59 +590,59 @@ export default {
                 >
                   LIÊN HỆ
                 </h3>
-                <form @submit.prevent="onSubmit" class="form_contact">
+                <form @submit.prevent="onSubmit" class="form_contact" autocomplete="off">
                   <div class="input_all">
+                    <p class="error-text text-red-500 text-[15px]" v-if="error.status">
+                      {{ error.text }}
+                    </p>
                     <input
                       id="name"
-                      :class="{ error: error.status, success: success.status }"
+                      :class="{ error: error.status}"
                       type="text"
                       v-model="form.name"
                       placeholder="Họ tên*"
                       class="input_bg block py-3"
                     />
-                    <p class="error-text" v-if="error.status">
+                    <p class="error-text text-red-500 text-[15px]" v-if="error.status">
                       {{ error.text }}
                     </p>
                     <input
                       type="text"
-                      :class="{ error: error.status, success: success.status }"
+                      :class="{ error: error.status }"
                       v-model="form.company"
                       placeholder="Đơn vị/Công ty*"
                       class="input_bg block py-3"
                     />
-                    <p class="error-text" v-if="error.status">
+                    <p class="error-text text-red-500 text-[15px]" v-if="error.status">
                       {{ error.text }}
                     </p>
                     <input
                       type="text"
-                      :class="{ error: error.status, success: success.status }"
+                      :class="{ error: error.status }"
                       v-model="form.service"
                       placeholder="Chức vụ*"
                       class="input_bg block py-3"
                     />
-                    <p class="error-text" v-if="error.status">
+                    <p class="error-text text-red-500 text-[15px]" v-if="error.status">
                       {{ error.text }}
                     </p>
                     <input
                       type="email"
-                      :class="{ error: error.status, success: success.status }"
+                      :class="{ error: error.status}"
                       v-model="form.email"
                       placeholder="Email*"
                       class="input_bg block py-3"
                     />
-                    <p class="error-text" v-if="error.status">
+                    <p class="error-text text-red-500 text-[15px]" v-if="error.status">
                       {{ error.text }}
                     </p>
                     <input
                       type="text"
-                      :class="{ error: error.status, success: success.status }"
+                      :class="{ error: error.status }"
                       v-model="form.phone"
                       placeholder="Số điện thoại*"
                       class="input_bg block py-3"
                     />
-                    <p class="error-text" v-if="error.status">
-                      {{ error.text }}
-                    </p>
                     <div class="flex justify-center">
                       <button
                       type="submit"
@@ -667,7 +690,7 @@ export default {
                       fill="white"
                     />
                   </svg>
-                  <p> <strong class="">Địa chỉ:</strong> Phố 131 Thái Hà, Phường Trung Liệt, Quận Đống Đa,<br />Thành
+                  <p> <strong class="">Địa chỉ:</strong> Phố 131 Thái Hà, Phường Trung Liệt, <br/>Quận Đống Đa,Thành
                   phố Hà Nội</p>
                 </li>
                 <li class="flex gap-[5px] items-center my-[10px]">
@@ -709,7 +732,7 @@ export default {
             <div>
               <h4 class="text-[#F7C51E] text-[20px] font-black">KẾT NỐI VỚI CHÚNG TÔI</h4>
               <nav class="py-2">
-                <ul class="flex gap-6">
+                <ul class="flex gap-6 nav_footer">
                   <li>
                     <svg
                       width="28"

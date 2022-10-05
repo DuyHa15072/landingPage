@@ -92,6 +92,14 @@ input{
     background: black;
     user-select: none;
   }
+  .show_model svg{
+    width: 80px;
+    height: 80px;
+  }
+  .ontop svg{
+    width: 30px;
+    height: 30px;  
+  }
   .banner{
     background-image: url(/src/image/banner.png);
     height: 101px;
@@ -102,7 +110,7 @@ input{
     max-width: 12%;
   }
   .box_slider{
-    display: none;
+    
   }
 
   .side2 {
@@ -189,7 +197,7 @@ input{
     margin: 0;
     padding: 10px;
     flex-wrap: wrap;
-    margin-top: 65px;
+    margin-top: 95px;
   }
   .contact_all h4 {
     margin-left: 20px;
@@ -214,7 +222,7 @@ input{
     margin-bottom: 28px;
   }
   .bg-submit{
-    padding: 10px 119px;
+    padding: 10px 145px;
   }
   //// footer
   .nav_contact{
@@ -239,6 +247,13 @@ input{
   input{
     margin: auto;
   }
+  .nav_footer{
+    grid-gap: 0.5rem;
+  }
+  .nav_side3{
+      margin: 0;
+  }
+  
 }
 
 @media only screen and (min-width: 840px) and (max-width: 1023px){
@@ -259,6 +274,14 @@ input{
     width: 30px;
    height: 50px;
   }
+  .show_model svg{
+    width: 80px;
+    height: 80px;
+  }
+  .ontop svg{
+    width: 30px;
+    height: 30px;  
+  }
   .text_backgroup{
     font-size: 20px;
   }
@@ -270,7 +293,7 @@ input{
     margin: 0;
     padding: 10px;
     flex-wrap: wrap;
-    margin-top: 65px;
+    margin-top: 75px;
   }
   .contact_all h4 {
     margin-left: 20px;
