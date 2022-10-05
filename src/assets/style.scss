@@ -1,18 +1,18 @@
 
 .mySwiper_one {
   width:100%;
-  height:1070px;
+  height: 888px;
 }
 .mySwiper_two{
   width:100%;
-  height:909px;
+  height:920px;
   
 }
 .mySwiper_three{
   width:100%;
-  height:100%;
+  height:890px;
   position: relative;
-  top: -151px;
+  top: -171px;
 }
 .swiper-slide {
   text-align: center;
@@ -75,13 +75,14 @@
 .show{
   height: 50px;
   text-align: center;
-  padding:11px 55px;
+  padding:10px 46px;
   line-height: 20px;
   font-size: 14px;
   opacity: 1;
   background: transparent;
   border-radius: 2px;
   z-index: 9999;
+  font-size: 18px;
 }
 
 
