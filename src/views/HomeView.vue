@@ -92,34 +92,34 @@ export default {
     },
     onSubmit() {
       if (!this.form.name) {
-        this.error = {
-          text: "Nhập đúng điều kiện",
-          status: true,
-        };
-      } else if (!this.form.company) {
-        this.error = {
-          text: "Nhập đúng điều kiện",
-          status: true,
-        };
-      }
-      else if (!this.form.service) {
-        this.error = {
-          text: "Nhập đúng điều kiện",
-          status: true,
-        };
-      }
-      else if (!this.form.email) {
-        this.error = {
-          text: "Nhập đúng điều kiện",
-          status: true,
-        };
-      }
-      else if (!this.form.phone) {
-        this.error = {
-          text: "Nhập đúng điều kiện",
-          status: true,
-        };
-      }
+          this.error = {
+            text: "Nhập đúng tên",
+            status: true,
+          };
+        } else if (!this.form.company) {
+          this.error = {
+            text: "Nhập đúng điều kiện",
+            status: true,
+          };
+        }
+        else if (!this.form.service) {
+          this.error = {
+            text: "Nhập đúng điều kiện",
+            status: true,
+          };
+        }
+        else if (!this.form.email) {
+          this.error = {
+            text: "Nhập đúng email ",
+            status: true,
+          };
+        }
+        else if (!this.form.phone) {
+          this.error = {
+            text: "Nhập đúng điều kiện SĐT trên 10 ký tự",
+            status: true,
+          };
+        }
       else if (this.form.name.length > 0) {
         this.success = {
           status: true,
@@ -441,7 +441,7 @@ export default {
                       d="M4.5 0C2.20997 0 0.353516 1.85644 0.353516 4.14649C0.353516 4.91233 0.503418 5.70333 0.933591 6.27344L4.5 11L8.0664 6.27344C8.45713 5.75561 8.64648 4.84017 8.64648 4.14649C8.64649 1.85644 6.79004 0 4.5 0ZM4.5 2.40155C5.46357 2.40155 6.24493 3.18292 6.24493 4.14648C6.24493 5.11005 5.46357 5.89142 4.5 5.89142C3.53644 5.89142 2.75507 5.11005 2.75507 4.14649C2.75507 3.18292 3.53644 2.40155 4.5 2.40155Z"
                       fill="white" />
                   </svg>
-                  <p> <strong class="">{{ $t("text_address") }}:</strong> Phố 131 Thái Hà, Phường Trung Liệt, <br />Quận
+                  <p> <strong class="">{{ $t("text_address") }}: </strong> Phố 131 Thái Hà, Phường Trung Liệt, <br />Quận
                     Đống Đa,Thành
                     phố Hà Nội</p>
                 </li>
@@ -451,7 +451,7 @@ export default {
                     <path fill-rule="evenodd"
                       d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
                   </svg>
-                  <strong>{{ $t("text_phone") }}</strong> 02466565025
+                  <strong>Phone:</strong> 02466565025
                 </li>
                 <li class="flex gap-[5px] items-center my-[10px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">

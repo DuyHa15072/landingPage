@@ -113,34 +113,34 @@
       },
       onSubmit() {
         if (!this.form.name) {
-          this.error = {
-            text: "Nhập đúng điều kiện",
-            status: true,
-          };
-        } else if (!this.form.company) {
-          this.error = {
-            text: "Nhập đúng điều kiện",
-            status: true,
-          };
-        }
-        else if (!this.form.service) {
-          this.error = {
-            text: "Nhập đúng điều kiện",
-            status: true,
-          };
-        }
-        else if (!this.form.email) {
-          this.error = {
-            text: "Nhập đúng điều kiện ",
-            status: true,
-          };
-        }
-        else if (!this.form.phone.length) {
-          this.error = {
-            text: "Nhập đúng điều kiện SĐT trên 10 ký tự",
-            status: true,
-          };
-        }
+        this.error = {
+          text: "Enter the exact condition",
+          status: true,
+        };
+      } else if (!this.form.company) {
+        this.error = {
+          text: "Enter the exact condition",
+          status: true,
+        };
+      }
+      else if (!this.form.service) {
+        this.error = {
+          text: "Enter the exact condition",
+          status: true,
+        };
+      }
+      else if (!this.form.email) {
+        this.error = {
+          text: "Enter the exact condition Email ",
+          status: true,
+        };
+      }
+      else if (!this.form.phone) {
+        this.error = {
+          text: "Enter the exact condition over 10 characters",
+          status: true,
+        };
+      }
         else if (this.form.name.length > 0) {
           this.success = {
             status: true,
@@ -191,7 +191,7 @@
               d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
           </svg>
           <h3 class="text-[48px] text-[#F7C51E] font-black">SUCCESS</h3>
-          <p>text_thankYou: 'Thank you!'
+          <p>We will contact you as soon as possible!
           </p>
           <span>Thank you!</span>
         </div>
