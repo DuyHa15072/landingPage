@@ -61,13 +61,7 @@
           el: ".swiper-pagination",
           clickable: true,
           renderBullet: function (index, className) {
-            return (
-              '<div class="' +
-              className +
-              " show" +
-              '">' +
-              menu[index] +
-              "</div>"
+            return ('<div class="' + className +" show" +'">' + menu[index] +"</div>"
             );
           },
         },
