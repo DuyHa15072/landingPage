@@ -6,6 +6,7 @@
   import "swiper/css/effect-fade";
   import "swiper/css/pagination";
   import "swiper/css/navigation";
+  import axios from 'axios';  
   import { RouterLink } from 'vue-router'
   
   import "./../assets/styleEng.scss";
@@ -106,11 +107,9 @@
       },
       showModel() {
         this.isShowModal = true
-        console.log(this.isShowModal);
       },
       hide() {
         this.isShowModal = false
-        console.log(this.isShowModal);
       },
       onSubmit() {
         if (!this.form.name) {
@@ -132,13 +131,13 @@
         }
         else if (!this.form.email) {
           this.error = {
-            text: "Nhập đúng điều kiện",
+            text: "Nhập đúng điều kiện ",
             status: true,
           };
         }
-        else if (!this.form.phone) {
+        else if (!this.form.phone.length) {
           this.error = {
-            text: "Nhập đúng điều kiện",
+            text: "Nhập đúng điều kiện SĐT trên 10 ký tự",
             status: true,
           };
         }
@@ -146,6 +145,20 @@
           this.success = {
             status: true,
           };
+          const creactContact = async () => {
+        try {
+          const res = await axios.post('https://sendmail.oeg.vn/api/contact-mail',{
+            'Tên': this.form.name,
+            'Công Ty': this.form.company,
+            "Chức Vụ": this.form.service,
+            "Email": this.form.email,
+            "SĐT": this.form.phone,
+          });
+        } catch (error) {
+           console.log(error);
+        }
+        }
+        creactContact()
           this.error = '',
             this.form.name = '',
             this.form.company = '',
@@ -405,13 +418,14 @@
                         placeholder="Unit/company" class="input_bg block py-3" />
                       <input type="text" :class="{ error: error.status }" v-model="form.service"
                         placeholder="Position" class="input_bg block py-3" />
-                      <p class="error-text text-red-500 text-[15px]" v-if="error.status">
-                        {{ error.text }}
-                      </p>
+                      
                       <input type="email" :class="{ error: error.status}" v-model="form.email" placeholder="Email*"
                         class="input_bg block py-3" />
-                      <input type="text" :class="{ error: error.status }" v-model="form.phone"
+                      <input type="number" :class="{ error: error.status }" v-model="form.phone"
                         placeholder="Phone" class="input_bg block py-3" />
+                        <p class="error-text text-red-500 text-[15px]" v-if="error.status">
+                        {{ error.text }}
+                      </p>
                       <div class="flex justify-center">
                         <button type="submit" class="
                           bg-submit 

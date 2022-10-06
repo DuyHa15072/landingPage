@@ -26,7 +26,7 @@ export default {
         company: "",
         service: "",
         email: "",
-        phone: "",
+        phone: null,
       },
       error: {
         text: "",
@@ -402,7 +402,7 @@ export default {
                       :placeholder="$t('text_position')" class="input_bg block py-3" />
                     <input type="email" :class="{ error: error.status}" v-model="form.email" placeholder="Email"
                       class="input_bg block py-3" />
-                    <input type="text" :class="{ error: error.status }" v-model="form.phone"
+                    <input type="number" :class="{ error: error.status }" v-model="form.phone"
                       :placeholder="$t('text_phone')" class="input_bg block py-3" />
                     <p class="error-text text-red-500 text-[15px]" v-if="error.status">
                       {{ error.text }}
