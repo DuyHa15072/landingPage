@@ -1,8 +1,8 @@
 import {createI18n} from 'vue-i18n'
 
 const i18n = new createI18n({
-   locale : 'en',
-   fallbackLocale: 'vn',
+   locale : 'vn',
+   fallbackLocale: 'en',
    messages:{
     en:{
       text_giaidau : 'TOUR NAMENTS',
@@ -21,7 +21,12 @@ const i18n = new createI18n({
       text_working: 'WORKING HOURS',
       text_time: 'Mon-Fir: 8.30 - 18.00',
       text_support: 'SUPPORT FOR TOURNAMENT',
-      text_supportAll: 'Please reach out to OEG esports via the fanpage for free advice and assistance with the tournament`s planning below'
+      text_supportAll: 'Please reach out to OEG esports via the fanpage for free advice and assistance with the tournament`s planning below',
+      text_Consultant: 'CONTACT CONSULTANT',
+      text_success: 'SUCCESS',
+      text_possble: 'We will contact you as soon as possible',
+      text_thankYou: 'Thank you!',
+      text_Language: 'ENG',
       
     },
     vn:{
@@ -41,7 +46,12 @@ const i18n = new createI18n({
       text_working: 'GIỜ LÀM VIỆC',
       text_time: 'Thứ 2 - Thứ 6: 8.30 - 18.00',
       text_support: 'TƯ VẤN HỖ TRỢ GIẢI ĐẤU',
-      text_supportAll:'Để được tư vấn và hỗ trợ miễn phí về việc tổ chức giải đấu, xin vui lòng liên hệ tới OEG ESPORTS qua Fanpage dưới đây.'
+      text_supportAll:'Để được tư vấn và hỗ trợ miễn phí về việc tổ chức giải đấu, xin vui lòng liên hệ tới OEG ESPORTS qua Fanpage dưới đây.',
+      text_Consultant: 'LIÊN HỆ TƯ VẤN',
+      text_success: 'THÀNH CÔNG',
+      text_possble: 'Chúng tôi sẽ lên hệ bạn sớm nhất có thể',
+      text_thankYou: 'Cảm ơn!',
+      text_Language: 'VN',
     }
    }
 })
