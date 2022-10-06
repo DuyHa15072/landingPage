@@ -299,7 +299,6 @@ export default {
                   <swiper-slide><img src="./image/VN/Frame3/2.jpg" alt="" /></swiper-slide>
                   <swiper-slide><img src="./image/VN/Frame3/3.jpg" alt="" /></swiper-slide>
                   <swiper-slide><img src="./image/VN/Frame3/4.jpg" alt="" /></swiper-slide>
-                  <swiper-slide><img src="./image/VN/Frame3/5.jpg" alt="" /></swiper-slide>
                   <div class="page"></div>
                 </swiper>
               </div>
@@ -310,9 +309,9 @@ export default {
                 }" :pagination="{
                     clickable: true,
                   }" :navigation="true" :modules="modules" class="mySwiper_three">
+                  <swiper-slide><img src="./image/VN/Frame3/5.jpg" alt="" /></swiper-slide>
                   <swiper-slide><img src="./image/VN/Frame3/6.jpg" alt="" /></swiper-slide>
                   <swiper-slide><img src="./image/VN/Frame3/7.jpg" alt="" /></swiper-slide>
-                  <swiper-slide><img src="./image/VN/Frame3/8.jpg" alt="" /></swiper-slide>
                   <div class="page"></div>
                 </swiper>
               </div>
