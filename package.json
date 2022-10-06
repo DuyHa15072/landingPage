@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10",
+    "axios": "^1.0.0",
     "postcss": "^8",
     "sass": "^1.55.0",
     "swiper": "^8.4.2",
