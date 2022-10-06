@@ -516,7 +516,7 @@
             </div>
             <div class="mb-[147px]">
               <button class="p-[17px] bg-[#F7C51E] items-center text-black font-black">
-               <a href="https://www.facebook.com/oegvn">Để được tư vấn và hỗ trợ miễn phí về việc tổ chức giải đấu, <br>xin vui lòng liên hệ tới OEG ESPORTS qua Fanpage dưới đây.</a>
+               <a href="https://www.facebook.com/oegvn">LIÊN HỆ TƯ VẤN</a>
               </button>
             </div>
           </div>
