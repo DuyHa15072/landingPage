@@ -233,7 +233,7 @@ export default {
             <swiper-slide><img src="./image/VN/Frame1/1.jpg" alt="" /></swiper-slide>
             <swiper-slide><img src="./image/VN/Frame1/2.jpg" alt="" /></swiper-slide>
             <swiper-slide><img src="./image/VN/Frame1/3.jpg" alt="" /></swiper-slide>
-            <swiper-slide><img src="./image/VN/Frame1/4.jpgs" alt="" /></swiper-slide>
+            <swiper-slide><img src="./image/VN/Frame1/4.jpg" alt="" /></swiper-slide>
             <swiper-slide><img src="./image/VN/Frame1/5.jpg" alt="" /></swiper-slide>
             <swiper-slide><img src="./image/VN/Frame1/6.jpg" alt="" /></swiper-slide>
           </swiper>
