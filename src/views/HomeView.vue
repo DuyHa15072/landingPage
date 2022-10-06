@@ -391,13 +391,13 @@
                         :placeholder="$t('text_company')" class="input_bg block py-3" />
                       <input type="text" :class="{ error: error.status }" v-model="form.service"
                         :placeholder="$t('text_position')" class="input_bg block py-3" />
-                      <p class="error-text text-red-500 text-[15px]" v-if="error.status">
-                        {{ error.text }}
-                      </p>
                       <input type="email" :class="{ error: error.status}" v-model="form.email" placeholder="Email"
                         class="input_bg block py-3" />
                       <input type="text" :class="{ error: error.status }" v-model="form.phone"
                         :placeholder="$t('text_phone')" class="input_bg block py-3" />
+                        <p class="error-text text-red-500 text-[15px]" v-if="error.status">
+                        {{ error.text }}
+                      </p>
                       <div class="flex justify-center">
                         <button type="submit" class="
                           bg-submit 
