@@ -385,13 +385,13 @@
                       <input id="name" :class="{ error: error.status}" type="text" v-model="form.name"
                         placeholder="Name" class="input_bg block py-3" />
                       <input type="text" :class="{ error: error.status }" v-model="form.company"
-                        placeholder="osition'" class="input_bg block py-3" />
+                        placeholder="Osition" class="input_bg block py-3" />
                       <input type="text" :class="{ error: error.status }" v-model="form.service"
                         placeholder="Position" class="input_bg block py-3" />
                       <p class="error-text text-red-500 text-[15px]" v-if="error.status">
                         {{ error.text }}
                       </p>
-                      <input type="email" :class="{ error: error.status}" v-model="form.email" placeholder="Email"
+                      <input type="email" :class="{ error: error.status}" v-model="form.email" placeholder="Email*"
                         class="input_bg block py-3" />
                       <input type="text" :class="{ error: error.status }" v-model="form.phone"
                         placeholder="Phone" class="input_bg block py-3" />
@@ -531,8 +531,8 @@
   
   <style scoped>
   .show_model {
-    background-image: url('./image/Mask group.png');
-    width: auto;
+    background-image: url('./../image/Mask group.png');
+    width: 357px;
     height: 409px;
     z-index: 99999;
     justify-content: center;

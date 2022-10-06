@@ -524,7 +524,7 @@
   
   <style scoped>
   .show_model {
-    background-image: url('./image/Mask group.png');
+    background-image: url('./../image/Mask group.png');
     width: auto;
     height: 409px;
     z-index: 99999;
