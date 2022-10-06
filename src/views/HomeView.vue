@@ -44,9 +44,6 @@
     mounted() {
       window.addEventListener("scroll", this.handleScroll);
     },
-    created() {
-      console.log(this.$i18n.locale)
-    },
     setup() {
       var menu = [
         "Timeline",
@@ -56,7 +53,7 @@
         "Giải đấu HOSC 2022",
         "Giải súng hơi",
         "Giải OSC  ",
-        "Giải OSNC",
+        "Giải Đấu OSNC",
       ];
       return {
         modules: [Autoplay, Pagination, Navigation, EffectFade],
@@ -94,11 +91,9 @@
       },
       showModel() {
         this.isShowModal = true
-        console.log(this.isShowModal);
       },
       hide() {
-        this.isShowModal = false
-        console.log(this.isShowModal);
+        this.isShowModal = false  
       },
       onSubmit() {
         if (!this.form.name) {

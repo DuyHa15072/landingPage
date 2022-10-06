@@ -43,10 +43,7 @@
     },
     mounted() {
       window.addEventListener("scroll", this.handleScroll);
-    },
-    created() {
-      console.log(this.$i18n.locale)
-    },
+    },  
     setup() {
       var menu = [
         "Timeline",
@@ -559,5 +556,11 @@
   .bg-submit{
     padding: 9px 260px;
   }
+  @media only screen and (max-width: 840px) {
+  .bg-submit{
+  padding: 9px 69px;
+  align-items: center;
+  }
+}
   </style>
   
