@@ -241,7 +241,7 @@ export default {
       <section class="side2 px-[229px]">
         <div class="text_side2">
           <p class="text-[#F7C51E]">{{ $t("text_giaidau") }}</p>
-          <h3 class="fiter text-[64px] font-black">{{ $t("text_2") }}</h3>
+          <h3 class="fiter text-[64px] font-black uppercase">{{ $t("text_2") }}</h3>
         </div>
         <div class="mt-[0]">
           <div class="">
@@ -429,7 +429,7 @@ export default {
     <footer class="parent2">
       <section class="p-[60px]">
         <div class="Contact_information w-[732px] h-[518px] child2">
-          <img src="./../image/OEG-White.png" alt="" class="logo ml-[60px] mt-[60px] mb-[10px]" />
+          <img src="./../image/OEG-White.png" alt="" class="logo ml-[60px] mt-[60px] mb-[10px] logo_contact" />
           <div class="nav_contact px-[85px]">
             <nav>
               <h4 class="text-[#F7C51E] text-[20px] font-black">{{ $t("text_contact") }}</h4>
