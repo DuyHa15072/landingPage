@@ -159,7 +159,7 @@
         }
         }
         creactContact()
-          this.error = '',
+            this.error.text = '',
             this.form.name = '',
             this.form.company = '',
             this.form.service = '',

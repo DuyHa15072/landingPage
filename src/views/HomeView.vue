@@ -93,7 +93,7 @@ export default {
     onSubmit() {
       if (!this.form.name) {
           this.error = {
-            text: "Nhập đúng tên",
+            text: "Nhập đúng Điều kiện",
             status: true,
           };
         } else if (!this.form.company) {
@@ -140,7 +140,7 @@ export default {
         creactContact()
 
 
-        this.error = '',
+        this.error.text = '',
           this.form.name = '',
           this.form.company = '',
           this.form.service = '',
