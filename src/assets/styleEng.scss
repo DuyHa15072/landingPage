@@ -84,6 +84,16 @@
   z-index: 9999;
   font-size: 18px;
 }
+.show1{
+  width: 0;
+.box_slider1 > .swiper-pagination-bullet{
+   display: block;
+  }
+}
+.box_slider1{
+  bottom: 384px; 
+  right: 0;
+}
 
 
 @media only screen and (max-width: 742px) {

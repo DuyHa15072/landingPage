@@ -47,13 +47,13 @@
     setup() {
       var menu = [
         "Timeline",
-        "Competition theme",
+        "Competition Events",
         "Tournament System",
         "Tournament Stats",
-        "Tournaments HOSC 2022",
-        "Airgun Award",
-        "Reward OSC  ",
-        "Reward OSNC",
+        "HOSC 2022",
+        "Airgun Championship",
+        "OSC",
+        "OSNC",
       ];
       return {
         modules: [Autoplay, Pagination, Navigation, EffectFade],
@@ -67,6 +67,21 @@
               " show" +
               '">' +
               menu[index] +
+              "</div>"
+            );
+          },
+        },
+        paginationShow1: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return (
+              '<div class="' +
+              className +
+              "show1" +
+              '">' +
+              ''
+              +
               "</div>"
             );
           },
@@ -212,12 +227,16 @@
         </div>
         <section class="side1">
           <div class="slider2 mx-[229px]">
-            <swiper :direction="'vertical'" :loop="true" :effect="'fade'" :autoplay="{
+            <swiper 
+            :direction="'vertical'"
+            :pagination="{
+              clickable: true
+            }"
+            :loop="true" :effect="'fade'" :autoplay="{
               delay: 5500,
               disableOnInteraction: false,
-            }" :pagination="{
-                clickable: true,
-              }" :modules="modules" class="mySwiper_one">
+            }" 
+            :modules="modules" class="mySwiper_one">
               <swiper-slide><img src="./../image/ENG/Frame1/1.jpg" alt="" /></swiper-slide>
               <swiper-slide><img src="./../image/ENG/Frame1/2.jpg" alt="" /></swiper-slide>
               <swiper-slide><img src="./../image/ENG/Frame1/3.jpg" alt="" /></swiper-slide>
@@ -345,9 +364,7 @@
                           d="M4.5 0C2.20997 0 0.353516 1.85644 0.353516 4.14649C0.353516 4.91233 0.503418 5.70333 0.933591 6.27344L4.5 11L8.0664 6.27344C8.45713 5.75561 8.64648 4.84017 8.64648 4.14649C8.64649 1.85644 6.79004 0 4.5 0ZM4.5 2.40155C5.46357 2.40155 6.24493 3.18292 6.24493 4.14648C6.24493 5.11005 5.46357 5.89142 4.5 5.89142C3.53644 5.89142 2.75507 5.11005 2.75507 4.14649C2.75507 3.18292 3.53644 2.40155 4.5 2.40155Z"
                           fill="white" />
                       </svg>
-                      <p> <strong class="">Address</strong>: Phố 131 Thái Hà, Phường Trung Liệt, Quận Đống
-                        Đa,<br />Thành
-                        phố Hà Nội</p>
+                      <p> <strong class="">Address</strong>: No. 131 Thai Ha Street, Trung Liet Ward, <br>Dong Da District, Hanoi City</p>
                     </li>
                     <li class="flex gap-[5px] items-center my-[10px]">
                       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
@@ -385,7 +402,7 @@
                       <input id="name" :class="{ error: error.status}" type="text" v-model="form.name"
                         placeholder="Name" class="input_bg block py-3" />
                       <input type="text" :class="{ error: error.status }" v-model="form.company"
-                        placeholder="Osition" class="input_bg block py-3" />
+                        placeholder="Unit/company" class="input_bg block py-3" />
                       <input type="text" :class="{ error: error.status }" v-model="form.service"
                         placeholder="Position" class="input_bg block py-3" />
                       <p class="error-text text-red-500 text-[15px]" v-if="error.status">
@@ -428,9 +445,7 @@
                         d="M4.5 0C2.20997 0 0.353516 1.85644 0.353516 4.14649C0.353516 4.91233 0.503418 5.70333 0.933591 6.27344L4.5 11L8.0664 6.27344C8.45713 5.75561 8.64648 4.84017 8.64648 4.14649C8.64649 1.85644 6.79004 0 4.5 0ZM4.5 2.40155C5.46357 2.40155 6.24493 3.18292 6.24493 4.14648C6.24493 5.11005 5.46357 5.89142 4.5 5.89142C3.53644 5.89142 2.75507 5.11005 2.75507 4.14649C2.75507 3.18292 3.53644 2.40155 4.5 2.40155Z"
                         fill="white" />
                     </svg>
-                    <p> <strong class="">Address:</strong> Phố 131 Thái Hà, Phường Trung Liệt, <br />Quận
-                      Đống Đa,Thành
-                      phố Hà Nội</p>
+                    <p> <strong class="">Address:</strong>No. 131 Thai Ha Street, Trung Liet Ward,<br > Dong Da District, Hanoi City</p>
                   </li>
                   <li class="flex gap-[5px] items-center my-[10px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
