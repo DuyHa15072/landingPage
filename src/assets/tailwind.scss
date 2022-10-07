@@ -34,8 +34,8 @@ body {
   top: -270px;  
 }
 .contacts {
-  background: url('./../image/Mask\ group.png');
-  
+  background: url('./../image/Mask\ group.png') repeat;
+
 }
 
 .parent2 {
@@ -83,7 +83,7 @@ input{
    right: 30px;
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 740px) {
   
   body {
     font-family: 'Chakra Petch', sans-serif;
@@ -269,7 +269,7 @@ input{
 }
 }
 
-@media only screen and (min-width: 840px) and (max-width: 1023px){
+@media only screen and (min-width: 740px) and (max-width: 1023px){
   .text_title2 {
     top: 213px;
     right: 111px;
@@ -305,7 +305,6 @@ input{
   }
   .from_contact{
     padding: 0;
-    margin: 0;
   }
   .contact_all {
     margin: 0;
@@ -316,5 +315,70 @@ input{
   .contact_all h4 {
     margin-left: 20px;
   }
-  
+  .text_backgroup{
+    font-size: 88px;
+  }
+  .banner{
+    height: 209px;
+    width: auto;
+    background-size: 761px;
+    background-repeat: repeat;
+  }
+  .header_top{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 70px;
+  }
+  .Language{
+   
+   margin-right: 20px;
+  }
+  .side3{
+    padding: 0;
+  }
+  .text-show{
+    font-size: 30px;
+        top: 3rem;
+  }
+  .tabs{
+    top: 3rem;
+  }
+  .text_backgroup2{
+    font-size: 88px;
+    display: none;
+  }
+  .text_title2 {
+    top: 0px;
+    right: 180px;
+    font-size: 24px;
 }
+  .contact{
+    top: 0;
+  }
+  .contacts{
+    margin: auto;
+    width: 711px;
+    top: 20px;
+    margin-bottom: 400px;
+  }
+ .contact_all{
+  margin: auto;
+ }
+ .input_bg{
+  width: 500px;
+ }
+ .bg-submit{
+  padding: 9px 137px;
+ }
+ .child2{
+  width: 600px;
+  height: 487px;
+  left: 122px;
+    bottom: -19px;
+ }
+ .contact_lq{
+  margin-top: 150px;
+ }
+ 
+}
+

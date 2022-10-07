@@ -264,7 +264,7 @@ export default {
       </section>
       <section class="side3 px-[229px]">
         <div class="slider2_titel">
-          <div id="tabs" class="container">
+          <div id="tabs" class="">
             <div class="tabs flex justify-around relative top-[7rem]">
               <button v-on:click="activetab = '1'" v-bind:class="[activetab === '1' ? 'active' : 'text-[#ffff]']"
                 class="text-[48px] text-[#F7C51E] font-black text-show">
