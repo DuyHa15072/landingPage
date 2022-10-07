@@ -212,7 +212,7 @@
               mx-[229px]
             ">
             <div class="logo">
-              <img src="./../image/OEG-White.png" alt="" />
+              <RouterLink to="/"><img src="./../image/OEG-White.png" alt="" /></RouterLink>
             </div>
             <div class="Language flex items-center float-right right-[10px] ">
               <ul>
