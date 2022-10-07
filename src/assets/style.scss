@@ -198,10 +198,10 @@
 }
 
 
-@media only screen and (min-width: 912px) and (max-width: 1280px){
+@media only screen and (min-width: 740px) and (max-width: 1368px){
   .mySwiper_one {
     width:100%;
-    height: 500px;
+    height: 780px;
   }
   .swiper-button-prev{
     color:  white;
@@ -213,18 +213,17 @@
   }
   .mySwiper_two {
     width: 100%;
-    height: 601px;
+    height: 840px;
 }
 .mySwiper_three{
   width:100%;
-  height:578px;
+  height:782px;
   position: relative;
-  top: -110px;
+  top: -132px;
   bottom: 33px;
   margin: auto;
 }
 .show{
   padding: 0 10px;
 }
-
 }
