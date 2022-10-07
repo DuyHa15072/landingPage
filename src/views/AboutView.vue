@@ -198,8 +198,7 @@
       </div>
     </div>
     <div>
-      <div class="bg-[#121212]">
-        <div class="banner select-none">
+      <div class="banner select-none">
           <header class="
               header_top
               flex
@@ -238,8 +237,10 @@
             </div>
           </header>
         </div>
+        <div class="bg-[#121212] ">
+      <div class="max-w-[90rem] mx-auto">
         <section class="side1">
-          <div class="slider2 mx-[229px] select-none">
+          <div class="slider2  select-none">
             <swiper 
             :direction="'vertical'"
             :pagination="{
@@ -259,7 +260,7 @@
             </swiper>
           </div>
         </section>
-        <section class="side2 px-[229px] select-none">
+        <section class="side2 select-none">
           <div class="text_side2">
             <p class="text-[#F7C51E]">TOURNAMENTS</p>
             <h3 class="fiter text-[64px] font-black uppercase ">Tournament System</h3>
@@ -283,7 +284,7 @@
             </div>
           </div>
         </section>
-        <section class="side3 px-[229px]">
+        <section class="side3">
           <div class="slider2_titel">
             <div id="tabs" class="container">
               <div class="tabs flex justify-around relative top-[7rem]">
@@ -301,7 +302,7 @@
                   text_backgroup
                   flex
                   justify-center
-                  text-[#3E3E3E] text-[200px]
+                  text-[#3E3E3E] text-[189px]
                   font-black
                   items-center
                   select-none
@@ -359,7 +360,7 @@
                 text_backgroup2
                 flex
                 justify-center
-                text-[#3E3E3E] text-[200px]
+                text-[#3E3E3E] text-[189px]
                 font-black
                 items-center
                 select-none
@@ -368,7 +369,7 @@
             </p>
           </div>
           <div>
-            <div class="contact_all flex pl-[312px]">
+            <div class="contact_all flex">
               <div class="contact_all mr-[112px] px-3">
                 <h4 class="fiter text-[40px] font-black">ABOUT US</h4>
                 <nav>
@@ -447,6 +448,7 @@
           </div>
         </section>
       </div>
+    </div>
       <footer class="parent2">
         <section class="p-[60px]">
           <div class="Contact_information w-[732px] h-[518px] child2">

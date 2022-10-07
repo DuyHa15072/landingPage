@@ -179,8 +179,7 @@ export default {
     </div>
   </div>
   <div>
-    <div class="bg-[#121212]">
-      <div class="banner select-none">
+    <div class="banner select-none">
         <header class="
               header_top
               flex
@@ -221,8 +220,10 @@ export default {
           </div>
         </header>
       </div>
+    <div class="bg-[#121212]">
+      <div class="max-w-[90rem] mx-auto">
       <section class="side1">
-        <div class="slider2 mx-[229px] select-none">
+        <div class="slider2  select-none">
           <swiper :direction="'vertical'" :loop="true" :effect="'fade'" :autoplay="{
             delay: 5500,
             disableOnInteraction: false,
@@ -238,7 +239,7 @@ export default {
           </swiper>
         </div>
       </section>
-      <section class="side2 px-[229px]">
+      <section class="side2">
         <div class="text_side2">
           <p class="text-[#F7C51E]">{{ $t("text_giaidau") }}</p>
           <h3 class="fiter text-[64px] font-black uppercase">{{ $t("text_2") }}</h3>
@@ -262,7 +263,7 @@ export default {
           </div>
         </div>
       </section>
-      <section class="side3 px-[229px]">
+      <section class="side3 ">
         <div class="slider2_titel">
           <div id="tabs" class="">
             <div class="tabs flex justify-around relative top-[7rem]">
@@ -280,7 +281,7 @@ export default {
                   text_backgroup
                   flex
                   justify-center
-                  text-[#3E3E3E] text-[200px]
+                  text-[#3E3E3E] text-[189px]
                   font-black
                   select-none
                   items-center
@@ -337,7 +338,7 @@ export default {
                 text_backgroup2
                 flex
                 justify-center
-                text-[#3E3E3E] text-[200px]
+                text-[#3E3E3E] text-[189px]
                 font-black
                 items-center
                 select-none
@@ -346,7 +347,7 @@ export default {
           </p>
         </div>
         <div>
-          <div class="contact_all flex pl-[312px]">
+          <div class="contact_all flex">
             <div class="contact_all mr-[112px] px-3">
               <h4 class="fiter text-[40px] font-black">{{ $t("text_about") }}</h4>
               <nav>
@@ -428,9 +429,10 @@ export default {
         </div>
       </section>
     </div>
+    </div>
     <footer class="parent2">
       <section class="p-[60px]">
-        <div class="Contact_information w-[732px] h-[518px] child2">
+        <div class="Contact_information child2">
           <img src="./../image/OEG-White.png" alt="" class="logo ml-[60px] mt-[60px] mb-[10px] logo_contact" />
           <div class="nav_contact px-[85px]">
             <nav>
@@ -513,7 +515,7 @@ export default {
             </div>
           </div>
         </div>
-        <div class="contact_lq flex flex-col gap-6 float-right mr-[50px]">
+        <div class="contact_lq flex flex-col justify-end gap-6 float-right mr-[50px]">
           <h4 class="text-[#F7C51E] text-[20px] font-black">{{ $t("text_working") }}</h4>
           <p>{{ $t("text_time") }}</p>
           <div>

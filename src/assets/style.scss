@@ -166,7 +166,7 @@
     display: none;
   }
 };
-@media only screen and (min-width: 740px) and (max-width: 1180px){
+@media only screen and (min-width: 810px) and (max-width: 1180px){
   .mySwiper_one {
     width:100%;
     height: 500px;
@@ -202,6 +202,9 @@
   .mySwiper_one {
     width:100%;
     height: 780px;
+  }
+  .text_title2{
+    display: none;
   }
   .swiper-button-prev{
     color:  white;

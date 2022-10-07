@@ -17,7 +17,7 @@ body {
 .banner{
   background-image: url('./../image/banner.png');
   height: 500px;
-  width: auto;
+  width: 100%;
 }
 .logo {
   max-width: 189px;
@@ -28,13 +28,15 @@ body {
 }
 
 .Contact_information {
-  background: url('./../image/Group\ 10.png');
+  background: url('./../image/Group\ 10.png') no-repeat;
+  width: 509px;
 }
 .contact{
   top: -270px;  
 }
 .contacts {
-  background: url('./../image/Mask\ group.png') repeat;
+  background: url('./../image/Mask\ group.png') no-repeat;
+
 
 }
 
@@ -45,8 +47,9 @@ body {
 
 .child2 {
   position: absolute;
-  left: 229px;
-  bottom: -270px;
+  left: 198px;
+  bottom: -83px;
+  padding-bottom: 20px;
 }
 
 .parent1 {
@@ -382,111 +385,3 @@ input{
  
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1280px){
-  .text_title2 {
-    top: 213px;
-    right: 111px;
-    font-size: 24px;
-}
-  .slider2{
-    margin: 0 10px;
-  }
-  .fiter{
-    font-size: 30px;
-  }
-  .side2{
-    padding: 0;
-    margin: 0 10px;
-  }
-  .text_side2{
-    margin-left: 20px;
-  }
-  .webty_black {
-    width: 30px;
-   height: 50px;
-  }
-  .show_model svg{
-    width: 80px;
-    height: 80px;
-  }
-  .ontop svg{
-    width: 30px;
-    height: 30px;  
-  }
-  .text_backgroup{
-    font-size: 20px;
-  }
-  .from_contact{
-    padding: 0;
-  }
-  .contact_all {
-    margin: 0;
-    padding: 10px;
-    flex-wrap: wrap;
-    margin-top: 75px;
-  }
-  .contact_all h4 {
-    margin-left: 20px;
-  }
-  .text_backgroup{
-    font-size: 150px;
-  }
-  .banner{
-    height: 337px;
-    width: auto;
-    background-size: 1282px;
-    background-repeat: repeat;
-  }
-  .header_top{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 70px;
-  }
-  .Language{
-   
-   margin-right: 20px;
-  }
-  .side3{
-    padding: 0;
-  }
-  .text-show{
-    font-size: 30px;
-        top: 3rem;
-  }
-  .tabs{
-    top: 5rem;
-  }
-  .text_title2 {
-    top: 0px;
-    right: 180px;
-    font-size: 24px;
-}
-  .contact{
-    top: 0;
-  }
-  .contacts{
-    margin: auto;
-    width: 711px;
-    top: 20px;
-    margin-bottom: 400px;
-  }
- .contact_all{
-  margin: auto;
- }
- .input_bg{
-  width: 500px;
- }
- .bg-submit{
-  padding: 9px 137px;
- }
- .child2{
-  width: 600px;
-  height: 487px;
-  left: 122px;
-    bottom: -19px;
- }
- .contact_lq{
-  margin-top: 150px;
- }
- 
-}
