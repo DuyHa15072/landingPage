@@ -513,7 +513,7 @@ export default {
             </div>
           </div>
         </div>
-        <div class="contact_lq flex flex-col gap-6 float-right mr-[200px]">
+        <div class="contact_lq flex flex-col gap-6 float-right mr-[50px]">
           <h4 class="text-[#F7C51E] text-[20px] font-black">{{ $t("text_working") }}</h4>
           <p>{{ $t("text_time") }}</p>
           <div>
