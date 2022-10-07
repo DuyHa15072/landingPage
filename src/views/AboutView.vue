@@ -199,7 +199,7 @@
     </div>
     <div>
       <div class="bg-[#121212]">
-        <div class="banner">
+        <div class="banner select-none">
           <header class="
               header_top
               flex
@@ -239,7 +239,7 @@
           </header>
         </div>
         <section class="side1">
-          <div class="slider2 mx-[229px]">
+          <div class="slider2 mx-[229px] select-none">
             <swiper 
             :direction="'vertical'"
             :pagination="{
@@ -259,12 +259,12 @@
             </swiper>
           </div>
         </section>
-        <section class="side2 px-[229px]">
+        <section class="side2 px-[229px] select-none">
           <div class="text_side2">
             <p class="text-[#F7C51E]">TOURNAMENTS</p>
-            <h3 class="fiter text-[64px] font-black uppercase">Tournament System</h3>
+            <h3 class="fiter text-[64px] font-black uppercase ">Tournament System</h3>
           </div>
-          <div class="mt-[0]">
+          <div class="mt-[0] select-none">
             <div class="">
               <swiper :loop="true" :pagination="paginationShow" :modules="modules" :autoplay="{
                 delay: 5500,
@@ -304,6 +304,7 @@
                   text-[#3E3E3E] text-[200px]
                   font-black
                   items-center
+                  select-none
                 ">
                 OEG ESPORTS
               </p>
@@ -314,7 +315,7 @@
                     disableOnInteraction: false,
                   }" :pagination="{
                       clickable: true,
-                    }" :navigation="true" :modules="modules" class="mySwiper_three">
+                    }" :navigation="true" :modules="modules" class="mySwiper_three select-none">
                     <swiper-slide><img src="./../image/ENG/Frame3/1.jpg" alt="" /></swiper-slide>
                     <swiper-slide><img src="./../image/ENG/Frame3/2.jpg" alt="" /></swiper-slide>
                     <swiper-slide><img src="./../image/ENG/Frame3/3.jpg" alt="" /></swiper-slide>
@@ -322,7 +323,7 @@
                     <div class="page"></div>
                   </swiper>
                 </div>
-                <div v-if="activetab === '2'" class="tabcontent">
+                <div v-if="activetab === '2'" class="tabcontent select-none">
                   <swiper :slidesPerView="1" :spaceBetween="0" :loop="true" :autoplay="{
                     delay: 5500,
                     disableOnInteraction: false,
@@ -350,6 +351,7 @@
                 relative
                 text-[#F7C51E]
                 top-[135px]
+                select-none
               ">
               CONTACT
             </h3>
@@ -360,6 +362,7 @@
                 text-[#3E3E3E] text-[200px]
                 font-black
                 items-center
+                select-none
               ">
               OEG ESPORTS
             </p>

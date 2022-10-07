@@ -180,7 +180,7 @@ export default {
   </div>
   <div>
     <div class="bg-[#121212]">
-      <div class="banner">
+      <div class="banner select-none">
         <header class="
               header_top
               flex
@@ -222,7 +222,7 @@ export default {
         </header>
       </div>
       <section class="side1">
-        <div class="slider2 mx-[229px]">
+        <div class="slider2 mx-[229px] select-none">
           <swiper :direction="'vertical'" :loop="true" :effect="'fade'" :autoplay="{
             delay: 5500,
             disableOnInteraction: false,
@@ -282,11 +282,12 @@ export default {
                   justify-center
                   text-[#3E3E3E] text-[200px]
                   font-black
+                  select-none
                   items-center
                 ">
               OEG ESPORTS
             </p>
-            <div class="content">
+            <div class="content select-none">
               <div v-if="activetab === '1'" class="tabcontent">
                 <swiper :slidesPerView="1" :spaceBetween="0" :loop="true" :autoplay="{
                   delay: 5500,
@@ -301,7 +302,7 @@ export default {
                   <div class="page"></div>
                 </swiper>
               </div>
-              <div v-if="activetab === '2'" class="tabcontent">
+              <div v-if="activetab === '2'" class="tabcontent select-none">
                 <swiper :slidesPerView="1" :spaceBetween="0" :loop="true" :autoplay="{
                   delay: 5500,
                   disableOnInteraction: false,
@@ -339,6 +340,7 @@ export default {
                 text-[#3E3E3E] text-[200px]
                 font-black
                 items-center
+                select-none
               ">
             OEG ESPORTS
           </p>

@@ -166,7 +166,39 @@
     display: none;
   }
 };
-@media only screen and (min-width: 740px) and (max-width: 1368px){
+@media only screen and (min-width: 740px) and (max-width: 1180px){
+  .mySwiper_one {
+    width:100%;
+    height: 500px;
+  }
+  .swiper-button-prev{
+    color:  white;
+    display: none;
+  }
+  .swiper-button-next{
+    color: white;
+    display: none;
+  }
+  .mySwiper_two {
+    width: 100%;
+    height: 601px;
+}
+.mySwiper_three{
+  width:100%;
+  height:578px;
+  position: relative;
+  top: -110px;
+  bottom: 33px;
+  margin: auto;
+}
+.show{
+  padding: 0 10px;
+}
+
+}
+
+
+@media only screen and (min-width: 912px) and (max-width: 1280px){
   .mySwiper_one {
     width:100%;
     height: 500px;
