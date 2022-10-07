@@ -261,7 +261,7 @@
         </section>
         <section class="side2 px-[229px]">
           <div class="text_side2">
-            <p class="text-[#F7C51E]">TOUR NAMENTS</p>
+            <p class="text-[#F7C51E]">TOURNAMENTS</p>
             <h3 class="fiter text-[64px] font-black uppercase">Tournament System</h3>
           </div>
           <div class="mt-[0]">
