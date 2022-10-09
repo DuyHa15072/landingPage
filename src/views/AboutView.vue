@@ -566,7 +566,7 @@
   <style scoped>
   .show_model {
     background-image: url('./../image/Mask group.png');
-    width: 357px;
+    width: 371px;
     height: 409px;
     z-index: 99999;
     justify-content: center;

@@ -552,7 +552,7 @@ export default {
 <style scoped>
 .show_model {
   background-image: url('./../image/Mask group.png');
-  width: auto;
+  width: 371px;
   height: 409px;
   z-index: 99999;
   justify-content: center;
