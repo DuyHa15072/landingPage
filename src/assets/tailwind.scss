@@ -108,7 +108,6 @@ input{
     height: 30px;  
   }
   .banner{
-    background-image: url(/src/image/banner.png);
     height: 101px;
     width: auto;
     background-size: 500px;
@@ -314,6 +313,7 @@ input{
     padding: 10px;
     flex-wrap: wrap;
     margin-top: 75px;
+    flex-direction: column
   }
   .contact_all h4 {
     margin-left: 20px;
@@ -322,7 +322,7 @@ input{
     font-size: 88px;
   }
   .banner{
-    height: 209px;
+    height: 199px;
     width: auto;
     background-size: 761px;
     background-repeat: repeat;
