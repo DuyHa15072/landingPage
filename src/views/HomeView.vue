@@ -361,7 +361,7 @@ export default {
                     </svg>
                     <p> <strong class="">{{ $t("text_address") }}</strong>: Phố 131 Thái Hà, Phường Trung Liệt, Quận
                       Đống
-                      Đa,<br />Thành
+                      Đa,<br /> Thành
                       phố Hà Nội</p>
                   </li>
                   <li class="flex gap-[5px] items-center my-[10px]">
@@ -430,7 +430,7 @@ export default {
       </section>
     </div>
     </div>
-    <footer class="parent2">
+    <footer class="parent2 max-w-[95rem] mx-auto">
       <section class="p-[60px]">
         <div class="Contact_information child2">
           <img src="./../image/OEG-White.png" alt="" class="logo ml-[60px] mt-[60px] mb-[10px] logo_contact" />
@@ -445,8 +445,8 @@ export default {
                       d="M4.5 0C2.20997 0 0.353516 1.85644 0.353516 4.14649C0.353516 4.91233 0.503418 5.70333 0.933591 6.27344L4.5 11L8.0664 6.27344C8.45713 5.75561 8.64648 4.84017 8.64648 4.14649C8.64649 1.85644 6.79004 0 4.5 0ZM4.5 2.40155C5.46357 2.40155 6.24493 3.18292 6.24493 4.14648C6.24493 5.11005 5.46357 5.89142 4.5 5.89142C3.53644 5.89142 2.75507 5.11005 2.75507 4.14649C2.75507 3.18292 3.53644 2.40155 4.5 2.40155Z"
                       fill="white" />
                   </svg>
-                  <p> <strong class="">{{ $t("text_address") }}: </strong> Phố 131 Thái Hà, Phường Trung Liệt, <br />Quận
-                    Đống Đa,Thành
+                  <p> <strong class="">{{ $t("text_address") }}: </strong> Phố 131 Thái Hà, Phường Trung Liệt, <br>Quận
+                    Đống Đa, Thành
                     phố Hà Nội</p>
                 </li>
                 <li class="flex gap-[5px] items-center my-[10px]">
@@ -515,7 +515,7 @@ export default {
             </div>
           </div>
         </div>
-        <div class="contact_lq flex flex-col justify-end gap-6 float-right mr-[50px]">
+        <div class="contact_lq flex flex-col justify-end gap-6 float-right">
           <h4 class="text-[#F7C51E] text-[20px] font-black">{{ $t("text_working") }}</h4>
           <p>{{ $t("text_time") }}</p>
           <div>
@@ -526,7 +526,7 @@ export default {
               {{ $t("text_support") }}
             </h5>
             <p>
-              Để được tư vấn và hỗ trợ miễn phí về việc tổ chức giải đấu, <br />xin vui lòng liên hệ tới OEG ESPORTS qua
+              Để được tư vấn và hỗ trợ miễn phí về việc tổ chức giải <br /> đấu, xin vui lòng liên hệ tới OEG ESPORTS qua
               Fanpage dưới đây.
             </p>
           </div>

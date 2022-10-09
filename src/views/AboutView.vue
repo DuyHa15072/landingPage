@@ -449,7 +449,7 @@
         </section>
       </div>
     </div>
-      <footer class="parent2">
+      <footer class="parent2 max-w-[95rem] mx-auto">
         <section class="p-[60px]">
           <div class="Contact_information w-[732px] h-[518px] child2">
             <img src="./../image/OEG-White.png" alt="" class="logo ml-[60px] mt-[60px] mb-[10px] logo_contact" />
@@ -464,7 +464,7 @@
                         d="M4.5 0C2.20997 0 0.353516 1.85644 0.353516 4.14649C0.353516 4.91233 0.503418 5.70333 0.933591 6.27344L4.5 11L8.0664 6.27344C8.45713 5.75561 8.64648 4.84017 8.64648 4.14649C8.64649 1.85644 6.79004 0 4.5 0ZM4.5 2.40155C5.46357 2.40155 6.24493 3.18292 6.24493 4.14648C6.24493 5.11005 5.46357 5.89142 4.5 5.89142C3.53644 5.89142 2.75507 5.11005 2.75507 4.14649C2.75507 3.18292 3.53644 2.40155 4.5 2.40155Z"
                         fill="white" />
                     </svg>
-                    <p> <strong class="">Address: </strong> No. 131 Thai Ha Street, Trung Liet Ward,<br > Dong Da District, Hanoi City</p>
+                    <p> <strong class="">Address: </strong> No. 131 Thai Ha Street, Trung Liet Ward, Dong Da District, Hanoi City</p>
                   </li>
                   <li class="flex gap-[5px] items-center my-[10px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
@@ -541,7 +541,7 @@
                 SUPPORT FOR TOURNAMENT
               </h5>
               <p class="">
-                Please reach out to OEG esports via the fanpage for free advice and <br> with the tournament`s planning below
+                Please reach out to OEG esports via the fanpage <br>for free advice and with the tournament`s planning below
               </p>
             </div>
             <div class="mb-[147px]">
