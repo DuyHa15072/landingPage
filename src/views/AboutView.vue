@@ -530,7 +530,7 @@
               </div>
             </div>
           </div>
-          <div class="contact_lq flex flex-col gap-6 float-right mr-[50px]">
+          <div class="contact_lq flex flex-col gap-6 float-right">
             <h4 class="text-[#F7C51E] text-[20px] font-black">WORKING HOURS</h4>
             <p>Mon-Fir: 8.30 - 18.00</p>
             <div>

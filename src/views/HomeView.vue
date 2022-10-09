@@ -432,7 +432,7 @@ export default {
     </div>
     <footer class="parent2 max-w-[95rem] mx-auto">
       <section class="p-[60px]">
-        <div class="Contact_information child2">
+        <div class="Contact_information w-[732px] h-[518px] child2">
           <img src="./../image/OEG-White.png" alt="" class="logo ml-[60px] mt-[60px] mb-[10px] logo_contact" />
           <div class="nav_contact px-[85px]">
             <nav>
