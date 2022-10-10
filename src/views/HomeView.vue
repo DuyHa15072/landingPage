@@ -230,7 +230,7 @@ export default {
     <div class="bg-[#121212]">
       <div class="max-w-[90rem] mx-auto">
       <section class="side1">
-        <div class="slider2  select-none">
+        <div class="slider2 ">
           <swiper :loop="true" :effect="'fade'" :autoplay="{
             delay: 5500,
             disableOnInteraction: false,
@@ -296,7 +296,7 @@ export default {
                 ">
               OEG ESPORTS
             </p>
-            <div class="content select-none">
+            <div class="content">
               <div v-if="activetab === '1'" class="tabcontent">
                 <swiper :slidesPerView="1" :spaceBetween="0" :loop="true" :autoplay="{
                   delay: 5500,
@@ -311,7 +311,7 @@ export default {
                   <div class="page"></div>
                 </swiper>
               </div>
-              <div v-if="activetab === '2'" class="tabcontent select-none">
+              <div v-if="activetab === '2'" class="tabcontent">
                 <swiper :slidesPerView="1" :spaceBetween="0" :loop="true" :autoplay="{
                   delay: 5500,
                   disableOnInteraction: false,

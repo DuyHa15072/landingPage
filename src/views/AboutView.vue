@@ -232,7 +232,7 @@
         <div class="bg-[#121212] ">
       <div class="max-w-[90rem] mx-auto">
         <section class="side1">
-          <div class="slider2  select-none">
+          <div class="slider2">
             <swiper
             :loop="true" :effect="'fade'" :autoplay="{
             delay: 5500,
@@ -256,7 +256,7 @@
             <p class="text-[#F7C51E]">TOURNAMENTS</p>
             <h3 class="fiter text-[64px] font-black uppercase ">Tournament System</h3>
           </div>
-          <div class="mt-[0] select-none">
+          <div class="mt-[0]">
             <div class="">
               <swiper :loop="true" :pagination="paginationShow" :modules="modules" :autoplay="{
                 delay: 5500,
@@ -307,7 +307,7 @@
                     disableOnInteraction: false,
                   }" :pagination="{
                       clickable: true,
-                    }" :navigation="true" :modules="modules" class="mySwiper_three select-none">
+                    }" :navigation="true" :modules="modules" class="mySwiper_three ">
                     <swiper-slide><img src="./../image/ENG/Frame3/1.jpg" alt="" /></swiper-slide>
                     <swiper-slide><img src="./../image/ENG/Frame3/2.jpg" alt="" /></swiper-slide>
                     <swiper-slide><img src="./../image/ENG/Frame3/3.jpg" alt="" /></swiper-slide>
@@ -315,7 +315,7 @@
                     <div class="page"></div>
                   </swiper>
                 </div>
-                <div v-if="activetab === '2'" class="tabcontent select-none">
+                <div v-if="activetab === '2'" class="tabcontent">
                   <swiper :slidesPerView="1" :spaceBetween="0" :loop="true" :autoplay="{
                     delay: 5500,
                     disableOnInteraction: false,
