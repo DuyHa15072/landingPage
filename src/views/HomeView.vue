@@ -50,11 +50,11 @@ export default {
       "Timeline",
       "Bộ môn thi đấu",
       "Hệ thống giải",
-      "Thôngsố giải",
+      "Thông số giải",
       "Giải đấu HOSC 2022",
       "Giải súng hơi",
       "Giải OSC  ",
-      "Giải Đấu OSNC",
+      "Giải OSNC",
     ];
     return {
       modules: [Autoplay, Pagination, Navigation, EffectFade],
