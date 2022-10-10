@@ -204,7 +204,7 @@ export default {
           <div class="Language flex items-center float-right right-[10px] ">
             <ul>
               <li class="group relative no-underline">
-                <RouterLink to="/" class="menu-item group-hover:border-white flex items-center mb-2 gap-1">
+                <RouterLink to="/landing/vn" class="menu-item group-hover:border-white flex items-center mb-2 gap-1">
                   <img src="./../image/VN.png" alt="">
                   VN
                   <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
@@ -216,7 +216,7 @@ export default {
                 <ul
                   class="absolute left-0 bg-transparent w-max mt-14 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:mt-0 transition-all duration-500">
                   <li>
-                    <RouterLink to="/ENG" class="menu-sub-item flex items-center mb-2" @click="setLocale('en')">
+                    <RouterLink to="/landing/en" class="menu-sub-item flex items-center mb-2" @click="setLocale('en')">
                       <img src="./../image/ENG.png" alt="">
                       <p class="px-[5px] text-white">ENG</p>
                     </RouterLink>
@@ -378,7 +378,7 @@ export default {
                       <path fill-rule="evenodd"
                         d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
                     </svg>
-                    <strong>Phone:</strong> 02466565025
+                    <strong>Phone:</strong><a href="tel:02466565025"> 02466565025</a>
                   </li>
                   <li class="flex gap-[5px] items-center my-[10px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -463,7 +463,7 @@ export default {
                     <path fill-rule="evenodd"
                       d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
                   </svg>
-                  <strong>Phone:</strong> 02466565025
+                  <strong>Phone:</strong> <a href="tel:02466565025">02466565025</a>
                 </li>
                 <li class="flex gap-[5px] items-center my-[10px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">

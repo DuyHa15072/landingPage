@@ -6,14 +6,19 @@ const router = createRouter({
   routes: [
     {
       path: '/',
+      redirect: { path:'/landing/vn', name: 'home', component: HomeView } 
+    },
+    {
+      path: '/landing/vn',
       name: 'home',
       component: HomeView
     },
     {
-      path: '/ENG',
+      path: '/landing/en',
       name: 'about',
       component: () => import('../views/AboutView.vue')
-    }
+    },
+    { path: '/:pathMatch(.*)*',redirect: { path:'/landing/vn', name: 'home', component: HomeView }  },
   ]
 })
 
