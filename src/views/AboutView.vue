@@ -532,7 +532,7 @@
                 SUPPORT FOR TOURNAMENT
               </h5>
               <p class="">
-                Please reach out to OEG esports via the fanpage <br>for free advice and with the tournament`s planning below
+                Please reach out to OEG esports via the fanpage <br class="br_footer">for free advice and with the tournament`s planning below.
               </p>
             </div>
             <div class="mb-[147px]">

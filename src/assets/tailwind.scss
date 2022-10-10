@@ -151,9 +151,12 @@ input{
 
   .parent2 {
     position: relative;
+    max-width: 360px;
 
   }
-
+  .br_footer{
+    display: none;
+  }
   .side3 {
     padding: 10px;
   }
@@ -245,6 +248,7 @@ input{
   .contact_lq{
     padding-top: 30px;
     margin: 0;
+    float: left;
   }
   .slider2{
     margin: 0;

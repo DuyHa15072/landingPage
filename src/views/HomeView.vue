@@ -534,7 +534,7 @@ export default {
               {{ $t("text_support") }}
             </h5>
             <p>
-              Để được tư vấn và hỗ trợ miễn phí về việc tổ chức giải <br /> đấu, xin vui lòng liên hệ tới OEG ESPORTS qua
+              Để được tư vấn và hỗ trợ miễn phí về việc tổ chức giải <br class="br_footer"> đấu, xin vui lòng liên hệ tới OEG ESPORTS qua
               Fanpage dưới đây.
             </p>
           </div>
