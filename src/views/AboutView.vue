@@ -241,7 +241,7 @@
       <div class="max-w-[90rem] mx-auto">
         <section class="side1">
           <div class="slider2  select-none">
-            <swiper 
+            <swiper
             :pagination="{
               clickable: true
             }"
@@ -285,7 +285,7 @@
         </section>
         <section class="side3">
           <div class="slider2_titel">
-            <div id="tabs" class="container">
+            <div id="tabs" class="">
               <div class="tabs flex justify-around relative top-[7rem]">
                 <button v-on:click="activetab = '1'" v-bind:class="[activetab === '1' ? 'active' : 'text-[#ffff]']"
                   class="text-[48px] text-[#F7C51E] font-black text-show">
