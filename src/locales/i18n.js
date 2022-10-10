@@ -34,7 +34,7 @@ const i18n = new createI18n({
       text_2 : 'HỆ THỐNG GIẢI ĐẤU',
       text_national: 'QUYỀN LỢI NATIONAL',
       text_studentcup : 'QUYỀN LỢI STUDENT CUP',
-      text_contact: 'Liên Hệ',
+      text_contact: 'LIÊN HỆ',
       text_about: 'THÔNG TIN CHÚNG TÔI',
       text_address: 'Địa chỉ',
       text_submit: 'Gửi',
