@@ -410,7 +410,7 @@
                       <input id="name" :class="{ error: error.status}" type="text" v-model="form.name"
                         placeholder="Name" class="input_bg block py-3" />
                       <input type="text" :class="{ error: error.status }" v-model="form.company"
-                        placeholder="Unit/company" class="input_bg block py-3" />
+                        placeholder="Unit/Company" class="input_bg block py-3" />
                       <input type="text" :class="{ error: error.status }" v-model="form.service"
                         placeholder="Position" class="input_bg block py-3" />
                       
