@@ -242,7 +242,6 @@
         <section class="side1">
           <div class="slider2  select-none">
             <swiper 
-            :direction="'vertical'"
             :pagination="{
               clickable: true
             }"

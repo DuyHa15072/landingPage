@@ -224,7 +224,7 @@ export default {
       <div class="max-w-[90rem] mx-auto">
       <section class="side1">
         <div class="slider2  select-none">
-          <swiper :direction="'vertical'" :loop="true" :effect="'fade'" :autoplay="{
+          <swiper :loop="true" :effect="'fade'" :autoplay="{
             delay: 5500,
             disableOnInteraction: false,
           }" :pagination="{
