@@ -66,7 +66,14 @@ export default {
           );
         },
       },
-
+      paginationShow_fram2: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return ('<div class="' + className + " show_fram1" + '">' + '' + "</div>"
+          );
+        },
+      },
     };
   },
   methods: {
@@ -227,15 +234,16 @@ export default {
           <swiper :loop="true" :effect="'fade'" :autoplay="{
             delay: 5500,
             disableOnInteraction: false,
-          }" :pagination="{
-              clickable: true,
-            }" :modules="modules" class="mySwiper_one">
+          }" :pagination="paginationShow_fram2" :modules="modules" class="mySwiper_one">
             <swiper-slide><img src="./../image/VN/Frame1/1.jpg" alt="" /></swiper-slide>
             <swiper-slide><img src="./../image/VN/Frame1/2.jpg" alt="" /></swiper-slide>
             <swiper-slide><img src="./../image/VN/Frame1/3.jpg" alt="" /></swiper-slide>
             <swiper-slide><img src="./../image/VN/Frame1/4.jpg" alt="" /></swiper-slide>
             <swiper-slide><img src="./../image/VN/Frame1/5.jpg" alt="" /></swiper-slide>
             <swiper-slide><img src="./../image/VN/Frame1/6.jpg" alt="" /></swiper-slide>
+            <div class="absolute right-[29px] bottom-[362px;] show_fram2">
+              <div class="swiper-pagination"></div>
+            </div>
           </swiper>
         </div>
       </section>
@@ -348,7 +356,7 @@ export default {
         </div>
         <div>
           <div class="contact_all flex">
-            <div class="contact_all mr-[112px] px-3">
+            <div class="contact_all justify-center mr-[112px] px-3">
               <h4 class="fiter text-[40px] font-black">{{ $t("text_about") }}</h4>
               <nav>
                 <ul class="ml-5 mt-[20px] px-[10px] nav_side3">

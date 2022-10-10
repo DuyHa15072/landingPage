@@ -72,22 +72,14 @@
             );
           },
         },
-        paginationShow1: {
-          el: ".swiper-pagination",
-          clickable: true,
-          renderBullet: function (index, className) {
-            return (
-              '<div class="' +
-              className +
-              "show1" +
-              '">' +
-              ''
-              +
-              "</div>"
-            );
-          },
+        paginationShow_fram2: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return ('<div class="' + className + " show_fram1" + '">' + '' + "</div>"
+          );
         },
-  
+      },
       };
     },
     methods: {
@@ -242,13 +234,10 @@
         <section class="side1">
           <div class="slider2  select-none">
             <swiper
-            :pagination="{
-              clickable: true
-            }"
             :loop="true" :effect="'fade'" :autoplay="{
-              delay: 5500,
-              disableOnInteraction: false,
-            }" 
+            delay: 5500,
+            disableOnInteraction: false,
+          }" :pagination="paginationShow_fram2" 
             :modules="modules" class="mySwiper_one">
               <swiper-slide><img src="./../image/ENG/Frame1/1.jpg" alt="" /></swiper-slide>
               <swiper-slide><img src="./../image/ENG/Frame1/2.jpg" alt="" /></swiper-slide>
@@ -256,6 +245,9 @@
               <swiper-slide><img src="./../image/ENG/Frame1/4.jpg" alt="" /></swiper-slide>
               <swiper-slide><img src="./../image/ENG/Frame1/5.jpg" alt="" /></swiper-slide>
               <swiper-slide><img src="./../image/ENG/Frame1/6.jpg" alt="" /></swiper-slide>
+              <div class="absolute right-[29px] bottom-[362px;] show_fram2">
+              <div class="swiper-pagination"></div>
+            </div>
             </swiper>
           </div>
         </section>
@@ -368,8 +360,8 @@
             </p>
           </div>
           <div>
-            <div class="contact_all flex">
-              <div class="contact_all mr-[112px] px-3">
+            <div class="contact_all justify-center flex">
+              <div class="contact_all  mr-[112px] px-3">
                 <h4 class="fiter text-[40px] font-black">ABOUT US</h4>
                 <nav>
                   <ul class="ml-5 mt-[20px] px-[10px] nav_side3">

@@ -269,6 +269,10 @@ input{
   width: 15px;
   height: 15px;
 }
+.show_fram2{
+  right: 15px;
+  bottom: 116px;
+}
 }
 
 @media only screen and (min-width: 740px) and (max-width: 1280px){
@@ -318,8 +322,8 @@ input{
   .contact_all h4 {
     margin-left: 20px;
   }
-  .text_backgroup{
-    font-size: 88px;
+  .text_backgroup {
+    font-size: 109px;
   }
   .banner{
     height: 199px;
@@ -340,11 +344,11 @@ input{
     padding: 0;
   }
   .text-show{
-    font-size: 30px;
+    font-size: 29px;
         top: 3rem;
   }
   .tabs{
-    top: 3rem;
+    top: 4rem;
     z-index: 99;
   }
   .text_backgroup2{
