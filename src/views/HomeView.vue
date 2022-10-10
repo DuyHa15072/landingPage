@@ -249,8 +249,8 @@ export default {
       </section>
       <section class="side2">
         <div class="text_side2">
-          <p class="text-[#F7C51E]">{{ $t("text_giaidau") }}</p>
-          <h3 class="fiter text-[64px] font-black uppercase">{{ $t("text_2") }}</h3>
+          <p class="text-[#F7C51E] ml-2">{{ $t("text_giaidau") }}</p>
+          <h3 class="fiter text-[64px] font-black uppercase ml-2">{{ $t("text_2") }}</h3>
         </div>
         <div class="mt-[0]">
           <div class="">
