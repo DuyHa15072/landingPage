@@ -239,12 +239,12 @@
             disableOnInteraction: false,
           }" :pagination="paginationShow_fram2" 
             :modules="modules" class="mySwiper_one">
-              <swiper-slide><img src="./../image/ENG/Frame1/1.jpg" alt="" /></swiper-slide>
-              <swiper-slide><img src="./../image/ENG/Frame1/2.jpg" alt="" /></swiper-slide>
-              <swiper-slide><img src="./../image/ENG/Frame1/3.jpg" alt="" /></swiper-slide>
-              <swiper-slide><img src="./../image/ENG/Frame1/4.jpg" alt="" /></swiper-slide>
-              <swiper-slide><img src="./../image/ENG/Frame1/5.jpg" alt="" /></swiper-slide>
-              <swiper-slide><img src="./../image/ENG/Frame1/6.jpg" alt="" /></swiper-slide>
+              <swiper-slide><img src="./../image/ENG/Frame1/1.jpg" alt="Welcometo Oeg esports" /></swiper-slide>
+              <swiper-slide><img src="./../image/ENG/Frame1/2.jpg" alt="Tầm Nhìn OEG" /></swiper-slide>
+              <swiper-slide><img src="./../image/ENG/Frame1/3.jpg" alt="Sức mạnh nhân sự" /></swiper-slide>
+              <swiper-slide><img src="./../image/ENG/Frame1/4.jpg" alt="Mạng lưới kết nối" /></swiper-slide>
+              <swiper-slide><img src="./../image/ENG/Frame1/5.jpg" alt="Hệ sinh thái oeg" /></swiper-slide>
+              <swiper-slide><img src="./../image/ENG/Frame1/6.jpg" alt="Đối Tác VTC" /></swiper-slide>
               <div class="absolute right-[29px] bottom-[362px;] show_fram2">
               <div class="swiper-pagination"></div>
             </div>
@@ -254,7 +254,7 @@
         <section class="side2 select-none">
           <div class="text_side2">
             <p class="text-[#F7C51E]">TOURNAMENTS</p>
-            <h3 class="fiter text-[64px] font-black uppercase ">Tournament System</h3>
+            <h2 class="fiter text-[64px] font-black uppercase ">Tournament System</h2>
           </div>
           <div class="mt-[0]">
             <div class="">
@@ -262,14 +262,14 @@
                 delay: 5500,
                 disableOnInteraction: false,
               }" class="mySwiper_two">
-                <swiper-slide><img src="./../image/ENG/Frame2/1.jpg" alt="" /></swiper-slide>
-                <swiper-slide><img src="./../image/ENG/Frame2/2.jpg" alt="" /></swiper-slide>
-                <swiper-slide><img src="./../image/ENG/Frame2/3.jpg" alt="" /></swiper-slide>
-                <swiper-slide><img src="./../image/ENG/Frame2/4.jpg" alt="" /></swiper-slide>
-                <swiper-slide><img src="./../image/ENG/Frame2/5.jpg" alt="" /></swiper-slide>
-                <swiper-slide><img src="./../image/ENG/Frame2/6.jpg" alt="" /></swiper-slide>
-                <swiper-slide><img src="./../image/ENG/Frame2/7.jpg" alt="" /></swiper-slide>
-                <swiper-slide><img src="./../image/ENG/Frame2/8.jpg" alt="" /></swiper-slide>
+                <swiper-slide><img src="./../image/ENG/Frame2/1.jpg" alt="Timeline" /></swiper-slide>
+                <swiper-slide><img src="./../image/ENG/Frame2/2.jpg" alt="Bộ môn thi đấu" /></swiper-slide>
+                <swiper-slide><img src="./../image/ENG/Frame2/3.jpg" alt="Hệ thống giải" /></swiper-slide>
+                <swiper-slide><img src="./../image/ENG/Frame2/4.jpg" alt="Thông số giải" /></swiper-slide>
+                <swiper-slide><img src="./../image/ENG/Frame2/5.jpg" alt="Giải đấu HOSC 2022" /></swiper-slide>
+                <swiper-slide><img src="./../image/ENG/Frame2/6.jpg" alt="Giải súng hơi" /></swiper-slide>
+                <swiper-slide><img src="./../image/ENG/Frame2/7.jpg" alt="Giải OSC" /></swiper-slide>
+                <swiper-slide><img src="./../image/ENG/Frame2/8.jpg" alt="Giải OSNC" /></swiper-slide>
                 <div class="swiper-pagination box_slider"></div>
               </swiper>
             </div>
@@ -308,10 +308,10 @@
                   }" :pagination="{
                       clickable: true,
                     }" :navigation="true" :modules="modules" class="mySwiper_three ">
-                    <swiper-slide><img src="./../image/ENG/Frame3/1.jpg" alt="" /></swiper-slide>
-                    <swiper-slide><img src="./../image/ENG/Frame3/2.jpg" alt="" /></swiper-slide>
-                    <swiper-slide><img src="./../image/ENG/Frame3/3.jpg" alt="" /></swiper-slide>
-                    <swiper-slide><img src="./../image/ENG/Frame3/4.jpg" alt="" /></swiper-slide>
+                    <swiper-slide><img src="./../image/ENG/Frame3/1.jpg" alt="Quyền lợi" /></swiper-slide>
+                    <swiper-slide><img src="./../image/ENG/Frame3/2.jpg" alt="Quyền lợi đặc trưng" /></swiper-slide>
+                    <swiper-slide><img src="./../image/ENG/Frame3/3.jpg" alt="Quyền lợi truyền thông" /></swiper-slide>
+                    <swiper-slide><img src="./../image/ENG/Frame3/4.jpg" alt="Quyền lợi ngoài sự kiện" /></swiper-slide>
                     <div class="page"></div>
                   </swiper>
                 </div>
@@ -322,9 +322,9 @@
                   }" :pagination="{
                       clickable: true,
                     }" :navigation="true" :modules="modules" class="mySwiper_three">
-                    <swiper-slide><img src="./../image/ENG/Frame3/5.jpg" alt="" /></swiper-slide>
-                    <swiper-slide><img src="./../image/ENG/Frame3/6.jpg" alt="" /></swiper-slide>
-                    <swiper-slide><img src="./../image/ENG/Frame3/7.jpg" alt="" /></swiper-slide>
+                    <swiper-slide><img src="./../image/ENG/Frame3/5.jpg" alt="Quyền lợi truyền thông " /></swiper-slide>
+                    <swiper-slide><img src="./../image/ENG/Frame3/6.jpg" alt="Quyền lợi đặc trưng" /></swiper-slide>
+                    <swiper-slide><img src="./../image/ENG/Frame3/7.jpg" alt="Quyền lợi ngoài sự kiện" /></swiper-slide>
                     <div class="page"></div>
                   </swiper>
                 </div>
